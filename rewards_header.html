@@ -1,0 +1,46 @@
+---
+title: Page Title
+active_section: default
+nav_bottom_border: bottom_border
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body style="min-height: 100vh; background: #101010;">
+
+	<div class="container-fluid sm-np-nm">
+		<header class="row page-header only-header-page sm-np-nm">
+			<div class="col logo-space-container">
+				<div class="logo-space">
+					<a href="rewards_portal.html"><img src="{{site.img_path}}/nav-back.svg" class="back-button"></a>
+					<div class="text-instead-of-logo">
+						<h2 class="section-header-style">AURUM Rewards</h2>
+					</div>
+					<div class="divider"></div>
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="AURUM by SBI Card" class="aurum-logo">
+				</div>
+			</div>
+			<div class="col info-space-container">
+				<div class="info-space">
+					<div>
+						<img src="{{site.img_path}}/user-icon.svg"> NAME
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+</body>
+
+</html>

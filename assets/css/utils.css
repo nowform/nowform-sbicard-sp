@@ -1,0 +1,341 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+/* import fonts ends */
+
+/* basic setup */
+:root {
+	--font-opensans: 'Open Sans', sans-serif;
+	--theme-yellow: #c2a63f;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-size: 18px;
+	background: rgb(16,16,16);
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	position: relative;
+	background: #000;
+}
+
+/* basic setup ends */
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.mtop-100 {
+	margin-top: 100px;
+}
+
+.mtop-60 {
+	margin-top: 60px;
+}
+
+.phone {
+	color: inherit !important;
+	text-decoration: none;
+}
+
+
+div.line-gradient-parent {
+	background: rgb(16,16,16);
+}
+
+	div.line-gradient {
+		width: 82%;
+		margin: 0 auto;
+		height: 1px;
+		background: rgb(16,16,16);
+		background: -webkit-gradient(linear, left top, right top, from(rgba(16,16,16,1)), color-stop(50%, rgba(221,174,70,1)), to(rgba(16,16,16,1)));
+		background: -o-linear-gradient(left, rgba(16,16,16,1) 0%, rgba(221,174,70,1) 50%, rgba(16,16,16,1) 100%);
+		background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(221,174,70,1) 50%, rgba(16,16,16,1) 100%);
+	}
+
+h2.section-header-style {
+	color: #c2a63f;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* buttons */
+button.button-styling {
+	border-radius: 33.5px;
+	background-color: #c2a63f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	padding: 12px 40px;
+	color: #000000;
+}
+
+/* form elements */
+div.form-element label.label-style {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	color: #8a8a96;
+	display: block;
+	margin: 0px;
+}
+
+div.form-element input[type=text].input-style {
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	color: #ffffff;
+	background: none;
+	border: none;
+	outline: none;
+
+	border-bottom: 1px solid #8a8a96;
+	padding-bottom: 5px;
+}
+
+/* checkbox styling */
+div.form-element div.checkbox-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+div.form-element div.checkbox-container div.checkbox {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+	div.form-element div.checkbox-container div.checkbox input[type=checkbox] {
+		display: none;
+	}
+	
+	div.form-element div.checkbox-container div.checkbox input[type=checkbox] + label {
+		border: 1px solid white;
+		background: transparent;
+		margin: 0px;
+		cursor: pointer;
+		position: relative;
+		top: 4px;
+		padding: 3px;
+	}
+
+		div.form-element div.checkbox-container div.checkbox input[type=checkbox] + label img {
+			height: 10px;
+			width: 10px;
+			display: block;
+			visibility: hidden;
+		}
+
+	div.form-element div.checkbox-container div.checkbox input[type=checkbox]:checked + label {
+		background: #c2a63f;
+		border: 1px solid #c2a63f;
+	}
+
+		div.form-element div.checkbox-container div.checkbox input[type=checkbox]:checked + label img {
+			visibility: visible;
+		}
+
+div.form-element div.checkbox-container span {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	display: inline-block;
+}
+
+	div.form-element div.checkbox-container span a {
+		text-decoration: underline;
+		color: inherit;
+	}
+
+/* radiobutton styling */
+div.form-element div.radiobutton-container {
+	display: inline-block;
+	margin-right: 10%;
+}
+
+div.form-element div.radiobutton-container input[type=radio] {
+	display: none;
+}
+
+div.form-element div.radiobutton-container input[type=radio] + label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ffffff;
+	margin: 0px !important;
+	cursor: pointer;
+}
+
+div.form-element div.radiobutton-container input[type=radio] + label div.radio-replica {
+	height: 14px;
+	width: 14px;
+	border-radius: 100%;
+	border: 1px solid #8a8a96;
+	background: transparent;
+	margin: 0px;
+	margin-right: 10px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+div.form-element div.radiobutton-container input[type=radio] + label div.radio-replica div.inside {
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+
+div.form-element div.radiobutton-container input[type=radio]:checked + label div.radio-replica div.inside {
+	background: #c2a63f;
+}
+
+/* select menu styling */
+div.form-element .ui-selectmenu-button.ui-button {
+	background: none;
+	width: 100%;
+	padding: 0px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #8a8a96;
+	border-radius: 0px;
+}
+
+div.ui-selectmenu-open {
+	border: none;
+	max-height: 220px;
+	overflow: scroll;
+}
+
+	div.ui-selectmenu-open ul.ui-menu {
+		border: none;
+		border-radius: 0px;
+		padding: 0px;
+		max-height: 220px;
+	}
+
+	div.ui-selectmenu-open ul.ui-menu li.ui-menu-item {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		border: none;
+		padding: 0px;
+		color: #8a8a96;
+	}
+
+		div.ui-selectmenu-open ul.ui-menu div.ui-menu-item-wrapper {
+			border: none;
+			background-color: #1f1f1f;
+			padding: 14px 14px 11px 21px;
+		}
+
+		div.ui-selectmenu-open ul.ui-menu div.ui-menu-item-wrapper.ui-state-active {
+			background: #000;
+			margin: 0px;
+			color: #c2a63f;
+		}
+
+span.ui-selectmenu-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding-bottom: 5px;
+}
+
+span.ui-icon.my-selectmenu-icon {
+	background: url('/assets/images/down-arrow.svg') !important;
+	background-repeat: no-repeat !important;
+}
+
+
+/* selectmenu over */
+
+
+img#external-icon {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.show-on-mobile {
+	display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 850px) {
+	.show-on-mobile {
+		display: inline;
+		display: unset;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	h2.section-header-style {
+		font-size: 18px;
+	}
+
+	button.button-styling {
+		font-size: 16px;
+	}
+
+	div.ui-selectmenu-open ul.ui-menu div.ui-menu-item-wrapper {
+		padding: 10px;
+	}
+
+	span.ui-icon.my-selectmenu-icon {
+		margin-top: 8px;
+	}
+
+	.offer-image > img {
+		vertical-align: middle;
+		border-style: none;
+		/*width: 60%;
+		height: 60%;*/
+		/* ^ remmoved after Nimish identified an issue here */
+	}
+
+	.offer-image.right, .offer-image.left {
+		/* display: flex;
+		align-content: center;
+		justify-content: center; */
+		text-align: center;
+	}
+
+	.sm-np-nm {
+		padding: 0px;
+		margin: 0px;
+	}
+	
+}
+
+@media screen and (min-width: 370px) and (max-width: 568px)
+{
+	button.button-styling {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 310px) and (max-width: 370px)
+{
+	button.button-styling {
+		font-size: 12px;
+	}
+}

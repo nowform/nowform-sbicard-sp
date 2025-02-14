@@ -1,0 +1,132 @@
+---
+title: Page Title
+active_section: default
+company_name: Victorinox
+voucher_type: AURUM Benefit
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="assets/css/vouchers.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		{% include vouchers_header.html %}
+
+		<section class="row offer-img">
+			<div class="col-12 px-0">
+				<div class="image-container">
+
+					<div class="background-image">
+						<img src="{{site.img_path}}/victorinox-bg.png" alt="BookMyShow voucher">
+					</div>
+
+					<div class="foreground-image-container">
+						<div class="foreground-image">
+							<img src="{{site.img_path}}/victorinox-voucher.png" alt="BookMyShow voucher">
+
+							<div class="foreground-image-text-container">
+								<h4 class="company-name">
+									Victorinox
+								</h4>
+								<h2 class="offer-text">
+									20% instant discount
+								</h2>
+							</div>
+
+							<!-- <div class="welcome-voucher-notification">
+								Welcome Voucher
+							</div> -->
+
+							<div class="show-on-mobile gradient-overlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-information">
+
+			<div class="col-12 px-0">
+
+				<div class="info-container">
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/gift-hand.png">
+						<span>
+							What’s Inside
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>20% instant discount for AURUM customers</li>
+						<li>The offer is applicable on all products at  https://www.gutereise.in/</li>
+						<li>The offer is applicable on a minimum transaction of Rs 1000</li>
+						<li>Offer is over and above on the existing discounts available at https://www.gutereise.in/</li>
+					</ul>
+
+					<!-- second list -->
+
+					<h3 class="info-heading">
+						
+						<img src="{{site.img_path}}/nationality-icon.svg">
+						<span>
+							Process to avail
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>Login to www.gutereise.in</li>
+						<li>Select the product and add the product to cart</li>
+						<li>After reviewing the product, click on proceed to checkout</li>
+						<li>Add shipping and billing details and then click on next and click to pay online</li>
+						<li>Enter the valid AURUM card details to proceed</li>
+						<li>Once cards details are verified, customer will get 20% instant off on the purchase value (minimum Cart value should be 1000 to avail this offer).</li>
+						<li>Then customer will make the balance payment via same credit card and post payment customer will get order id.</li>
+					</ul>
+
+					<!-- third list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/list-ticked.png">
+						<span>
+							Terms and conditions
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>20% cashback on minimum purchase of INR 1000 on all the products available in Gute Reise online store.</li>
+						<li>Offer is applicable on our online store (www.gutereise.in).</li>
+						<li>To avail the discount, you are required to use AURUM SBI Card at the time of checkout.</li>
+						<li>No refunds or exchanges are permitted under this promotion.</li>
+						<li>COD is not applicable.</li>
+						<li>Deliveries will be specific to the pin code listed on our website www.gutereise.in. </li>
+						<li>Free shipping is applicable only on minimum purchase of INR 2000 and above.</li>
+						<li>By availing the Offer, you hereby agree to comply with these terms and conditions and waive any right to claim ambiguity in these terms and conditions.</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+---
+title: Page Title
+active_section: default
+nav_bottom_border: bottom_border
+nav_page: priority
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/convenience-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text airport priority-service">
+				<div class="offer-logo">
+					<h2 class="section-header-style">AURUM Convenience</h2>
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 60px;">
+					Complimentary professional services designed to help you save your time and efforts - AURUM
+					Concierge and AURUM Secretarial Access
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta" onclick="window.open('https://www.sbicardconcierge.com/'
+						, '_blank' );">
+						<img src="{{site.img_path}}/concierge-bell-icon.svg" style="width: 26px;">
+						Contact your personal concierge
+					</button>
+					<span class="external-window">You will be redirected to an external portal.</span>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<section class="row offers-instore priority-service">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					AURUM Secretarial Access
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>Since time is a luxury, presenting the ultimate privilege – AURUM Secretarial Access
+								</h4>
+								<span class="subtext">
+									Limited authorization that lets your Secretary/Executive Assistant interact with us
+									on your behalf<br>
+									Contact your AURUM Customer Service Executive to make any changes to secretarial
+									details with
+									<ul>
+										<li>Authorized Person's Name</li>
+										<li>Authorized Person's Date of Birth</li>
+										<li>Authorized Mother Maiden Name</li>
+										<li>Authorized Person's Mailing Address</li>
+									</ul>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/nominee.png" class="nominee-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row priority-service-ctas">
+
+			<div class="col-12 px-0">
+
+				<div class="ctas-container">
+					<div class="cta">
+						<button class="button-styling" onclick="window.open('tel:18605002000', '_self');">
+							<img src="{{site.img_path}}/black-phone-icon.svg" style="width: 24px;">
+							Call 1860 500 2000
+						</button>
+					</div>
+					<div class="cta">
+						<button class="button-styling" onclick="window.open('mailto:aurum@sbicard.com');">
+							<img src="{{site.img_path}}/envelope-icon.svg" style="width: 32px;">
+							Write to aurum@sbicard.com
+						</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row offers-instore priority-service">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					AURUM Concierge
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>Personal Assistance</h4>
+								<span class="subtext">
+									AURUM Concierge has been created to anticipate your every need and provide
+									professional
+									assistance whenever you like. This includes gifting / flower delivery, customised
+									travel and
+									holiday packages, golf reservations and health consultations.
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/bouquet.png" class="bouquet-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row priority-service-ctas">
+
+			<div class="col-12 px-0">
+
+				<div class="ctas-container">
+
+					<div class="cta">
+						<button class="button-styling" onclick="window.open('tel:1800212168168', '_self');">
+							<img src="{{site.img_path}}/black-phone-icon.svg" style="width: 24px;">
+							Call 1800 212 168 168
+						</button>
+					</div>
+					<div class="cta">
+						<button class="button-styling"
+							onclick="window.open('mailto:support@sbicardconcierge.com', '_self');">
+							<img src="{{site.img_path}}/envelope-icon.svg" style="width: 32px;">
+							Write to support
+						</button>
+					</div>
+				</div>
+				<div style="" class="concierge-button">
+					<button class="button-styling top-cta" onclick="window.open('https://www.sbicardconcierge.com/'
+							, '_blank' );">
+						<img src="{{site.img_path}}/concierge-bell-icon.svg" style="width: 26px;">
+						Contact your concierge
+					</button>
+					<span class="external-window">You will be redirected to an external portal.</span>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+</body>
+
+</html>

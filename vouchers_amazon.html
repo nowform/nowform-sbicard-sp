@@ -1,0 +1,135 @@
+---
+title: Page Title
+active_section: default
+company_name: AURUM Reward Points
+voucher_type: AURUM Benefit
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="assets/css/vouchers.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		{% include vouchers_header.html %}
+
+		<section class="row offer-img">
+			<div class="col-12 px-0">
+				<div class="image-container">
+
+					<div class="background-image">
+						<img src="{{site.img_path}}/arp-bg.png" alt="Amazon Prime voucher">
+					</div>
+
+					<div class="foreground-image-container">
+						<div class="foreground-image">
+							<img src="{{site.img_path}}/arp-voucher.png" alt="Amazon Prime voucher">
+
+							<div class="foreground-image-text-container">
+								<h4 class="company-name">
+									AURUM Reward Points
+								</h4>
+								<h2 class="offer-text">
+									40,000 ARP
+								</h2>
+							</div>
+
+							<!-- <div class="welcome-voucher-notification">
+								Welcome Voucher
+							</div> -->
+
+							<div class="show-on-mobile gradient-overlay"></div>
+
+						</div>
+
+
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-information">
+
+			<div class="col-12 px-0">
+
+				<div class="info-container">
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/gift-hand.png">
+						<span>
+							What's Inside
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>
+							Get 40,000 AURUM Reward Points (ARP) equivalent to INR 10,000 on payment of joining fee. (1
+							ARP = INR 0.25)
+						</li>
+
+					</ul>
+
+					<!-- second list -->
+
+					<!-- <h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/list-ticked.png">
+						<span>
+							Terms and conditions
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>
+							Eligible AURUM customer will receive a Unique URL and code from SBI card via SMS on their
+							registered Mobile Number.
+						</li>
+						<li>
+							SMS will be sent within 2 weeks of first Transaction.
+						</li>
+						<li>
+							On clicking the URL, customer will be redirected to Amazon site where the customer can
+							log-in to their Amazon Account/create new Amazon account.
+						</li>
+						<li>
+							Customer selects billing address for the Code. Alternatively, creates a new billing address
+							if she is new to Amazon.
+						</li>
+						<li>
+							The complimentary subscription is applicable for non-members of Amazon Prime only.
+						</li>
+						<li>
+							Auto-renew can be turned off and the Prime membership will discontinue at the end of the
+							promo period.
+						</li>
+						<li>
+							Only non-Prime customers will be able to redeem the offer.
+						</li>
+					</ul> -->
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

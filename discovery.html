@@ -1,0 +1,277 @@
+---
+title: Page Title
+active_card: discovery
+active_section: entertainment
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/discovery-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/discovery-logo.png" alt="Discovery plug logo" class="uc-logo">
+				</div>
+
+				<div class="offer-tagline">
+					Discover a whole new entertainment that excites as well as enriches! TV shows, exclusive specials,
+					award-winning documentaries and more!
+				</div>
+			</div>
+		</section>
+
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								1-year complimentary subscription to Discovery Plus App
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/discovery-1-year.png" class="1-1-drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/discovery-docus.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Exclusive premium shows, documentaries and specials
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								100% ad-free
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/discovery-no-ads.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail Discovery Plus Membership
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						AURUM Cardholders are required to make their first transaction using their AURUM Card to
+						become eligible for the membership.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Eligible AURUM customers will receive E-code via SMS which needs to be applied in Discovery Plus
+						app.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						Android users:
+						<br>
+						<br>
+						<ul style="padding-left: 20px;">
+							<li>Step 1: Install and open the Discovery Plus App.</li>
+							<li>Step 2: Click on top left of the App homepage to open the main menu</li>
+							<li>Step 3: Click on ‘Redeem Voucher’ button</li>
+							<li>Step 4: Login/Register</li>
+							<li>Step 5: Enter the E-code and click on continue to avail the premium subscription</li>
+
+						</ul>
+
+						<!-- Click on top left of the app homepage to open the Left hand side menu > Click on
+						apply E-code > Login/Register > Enter E-code and click on continue to activate the premium
+						membership -->
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						IOS users:
+						<br>
+						<br>
+						<ul style="padding-left: 20px;">
+							<li>Step 1: Go to www.discoveryplus.in/premium and click on continue</li>
+							<li>Step 2: Login/Register</li>
+							<li>Step 3: Select annual INR 299 plan and click on subscribe</li>
+							<li>Step 4: Enter E- code and click on continue to avail the premium subscription</li>
+
+						</ul>
+						<!-- Go to www.discoveryplus.in > Go to the premium section via the bottom tray or
+						homepage menu & Click on continue > Login/Register > Select annual plan > Enter E-code and click
+						on continue to activate -->
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries, contact <a href="tel:18605002000">1800
+							500 2000</a> to write to <a href="mailto:aurum@sbicard.com">aurum@sbicard.com</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>Only Primary Cardholders of AURUM are eligible for this Membership</li>
+						<li>AURUM Cardholders are required to make their first transaction using their AURUM Card to
+							become eligible for the membership</li>
+						<li>AURUM Cardholders can avail their membership by putting the E-code on Discovery Plus App.
+						</li>
+						<li>Eligible customers will receive E- code by SMS which needs to be applied in Discovery plus
+							App. </li>
+						<li>The validity of this E-code will be upto 6 months from the SMS date.</li>
+						<li>The E-code is applicable only for new users who do not have Discovery Plus currently. You
+							must be 18+ and resident in India.</li>
+
+						<li>This voucher can be applied for a free, one year subscription to Discovery Plus App Premium
+							offerings.</li>
+
+						<div class="initially-hide">
+							<li>Valid for a one-year subscription for new subscribers only. In the event that you are an
+								existing subscriber of Discovery Plus, you would not be able to apply this voucher to
+								your
+								current subscription.</li>
+							<li>The voucher(s) are available only for one time use.</li>
+							<li>This offer cannot be combined with any other discount or voucher. </li>
+							<li>Improper use of the voucher, including but not limited to its publication or sale is
+								prohibited and may constitute fraud. </li>
+							<li>This voucher can only be redeemed on Discovery Plus app or on the Discovery Plus website
+								only. </li>
+							<li>To redeem this voucher, enter the voucher code on the Redeem  Voucher section on the
+								Discovery Plus Premium page. </li>
+							<li>You will be required to register for Discovery Plus and agree to the applicable Terms of
+								Use
+								and Privacy Policy before you can redeem the voucher code. These Terms are additional to
+								such Terms of Use..</li>
+							<li>Discovery reserves the right to change / modify / add / delete any of the terms &
+								conditions of the offer at any time without notice</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations</li>
+
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/owlcarousel_js.html %}
+	{% include imports/custom_js.html %}
+	<script src="assets/js/zomato_disabled.js"></script>
+</body>
+
+</html>

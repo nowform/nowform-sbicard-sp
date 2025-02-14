@@ -1,0 +1,305 @@
+<section id="membership-cards" class="row membership-cards{% if page.nav_page == 'memberships' %} memberships-page {% endif %}">
+	<div class="col-12 px-0" style="overflow:hidden">
+		<ul class="membership-sections-list">
+			{% if page.active_section == 'entertainment' or page.active_section == 'default'%}
+			<li class="membership-sections-item active">
+				{% else %}
+			<li class="membership-sections-item ">
+				{% endif %}
+
+				<a href="prime_video.html">Entertainment</a>
+			</li>
+			{% if page.active_section == 'dining'%}
+			<li class="membership-sections-item active">
+				{% else %}
+			<li class="membership-sections-item ">
+				{% endif %}
+
+				<a href="zomato_premembership.html">Dining</a>
+			</li>
+			{% if page.active_section == 'lifestyle'%}
+			<li class="membership-sections-item active">
+				{% else %}
+			<li class="membership-sections-item ">
+				{% endif %}
+
+				<a href="amazon_prime.html">Lifestyle</a>
+			</li>
+
+			<!-- {% if page.active_section == 'health'%}
+			<li class="membership-sections-item active">
+				{% else %}
+			<li class="membership-sections-item ">
+				{% endif %}
+
+				<a href="fitternity.html">Health and Wellness</a>
+			</li> -->
+		</ul>
+		{% if page.active_section == 'dining'%}
+		<div class="cards-container">
+
+			{% if page.active_card == 'zomatogold'%}
+			<a href=" zomato_premembership.html" class="single-card-container active">
+				{% else %}
+				<a href="zomato_premembership.html" class="single-card-container">
+					{% endif %}
+					<div class="card-design">
+						<div class="offer-logo">
+							<img src="{{site.img_path}}/zomatopro-logo.svg" alt="" style="max-height: 20px;"
+								class="hide-on-mobile">
+							<img src="{{site.img_path}}/zomatopro-logo.svg" alt="" style="max-height: 22px;"
+								class="show-on-mobile">
+						</div>
+						<div class="offer-image">
+							<img src="{{site.img_path}}/food-icon.svg" alt="Food offer">
+						</div>
+					</div>
+					<div class="card-name">
+						Zomato Pro
+					</div>
+
+				</a>
+
+				{% if page.active_card == 'eazydiner'%}
+				<a href="eazydiner_premembership.html" class="single-card-container active">
+					{% else %}
+					<a href="eazydiner_premembership.html" class="single-card-container">
+						{% endif %}
+
+						<div class="card-design">
+							<div class="offer-logo">
+								<img src="{{site.img_path}}/eazydiner-logo.svg" alt="" style="width: 63px;"
+									class="hide-on-mobile">
+								<img src="{{site.img_path}}/eazydiner-logo.svg" alt="" style="max-height: 20px;"
+									class="show-on-mobile">
+							</div>
+							<div class="offer-image">
+								<img src="{{site.img_path}}/food-icon.svg" alt="Food offer">
+							</div>
+						</div>
+						<div class="card-name">
+							EazyDiner Prime
+						</div>
+
+					</a>
+
+		</div>
+		{% endif %}
+
+		<!-- {% if page.active_section == 'health'%}
+		<div class="cards-container">
+			{% if page.active_card == 'fitternity'%}
+			<a href="fitternity.html" class="single-card-container active">
+				{% else %}
+				<a href="fitternity.html" class="single-card-container">
+					{% endif %}
+
+					<div class="card-design">
+						<div class="offer-logo">
+							<img src="{{site.img_path}}/fitternity-logo.png" alt="" style="height: 25px;"
+								class="hide-on-mobile">
+							<img src="{{site.img_path}}/fitternity-logo.png" alt="" style="max-height: 19px;"
+								class="show-on-mobile">
+						</div>
+						<div class="offer-image">
+							<img src="{{site.img_path}}/icons/health-icon.png" alt="Food offer">
+						</div>
+					</div>
+					<div class="card-name">
+						Fitternity
+					</div>
+
+				</a>
+				{% if page.active_card == 'practo'%}
+				<a href="practo_plus.html" class="single-card-container active">
+					{% else %}
+					<a href="practo_plus.html" class="single-card-container">
+						{% endif %}
+
+						<div class="card-design">
+							<div class="offer-logo">
+								<img src="{{site.img_path}}/practo-logo.png" alt="" style="height: 25px;"
+									class="hide-on-mobile">
+								<img src="{{site.img_path}}/practo-logo.png" alt="" style="max-height: 19px;"
+									class="show-on-mobile">
+							</div>
+							<div class="offer-image">
+								<img src="{{site.img_path}}/icons/health-icon.png" alt="Food offer">
+							</div>
+						</div>
+						<div class="card-name">
+							Practo
+						</div>
+
+					</a>
+
+		</div>
+		{% endif %} -->
+
+		{% if page.active_section == 'entertainment' or page.active_section == 'default' %}
+		<div class="cards-container">
+			{% if page.active_card == 'primevideo'%}
+			<a href="prime_video.html" class="single-card-container active">
+				{% else %}
+				<a href="prime_video.html" class="single-card-container">
+					{% endif %}
+
+					<div class="card-design">
+						<div class="offer-logo">
+							<img src="{{site.img_path}}/amazon_prime_logo.png" alt="" style="height: 20px;"
+								class="hide-on-mobile">
+							<img src="{{site.img_path}}/amazon_prime_logo.png" alt="" style="max-height: 15px;"
+								class="show-on-mobile">
+						</div>
+						<div class="offer-image">
+							<img src="{{site.img_path}}/icons/entertainment-icon.png" alt="Food offer">
+						</div>
+					</div>
+					<div class="card-name">
+						Prime Video
+					</div>
+
+				</a>
+
+				{% if page.active_card == 'discovery'%}
+				<a href="discovery.html" class="single-card-container active">
+					{% else %}
+					<a href="discovery.html" class="single-card-container">
+						{% endif %}
+
+						<div class="card-design">
+							<div class="offer-logo">
+								<img src="{{site.img_path}}/discovery-logo.png" alt="" style="height: 25px;"
+									class="hide-on-mobile">
+								<img src="{{site.img_path}}/discovery-logo.png" alt="" style="max-height: 19px;"
+									class="show-on-mobile">
+							</div>
+							<div class="offer-image">
+								<img src="{{site.img_path}}/icons/entertainment-icon.png" alt="Food offer">
+							</div>
+						</div>
+						<div class="card-name">
+							Discovery Plus
+						</div>
+
+					</a>
+					{% if page.active_card == 'bms'%}
+					<a href="book_my_show.html" class="single-card-container active">
+						{% else %}
+						<a href="book_my_show.html" class="single-card-container">
+							{% endif %}
+
+							<div class="card-design">
+								<div class="offer-logo">
+									<img src="{{site.img_path}}/bms-logo.png" alt="" style="height: 25px;"
+										class="hide-on-mobile">
+									<img src="{{site.img_path}}/bms-logo.png" alt="" style="max-height: 19px;"
+										class="show-on-mobile">
+								</div>
+								<div class="offer-image">
+									<img src="{{site.img_path}}/icons/entertainment-icon.png" alt="Food offer">
+								</div>
+							</div>
+							<div class="card-name">
+								Book My Show
+							</div>
+
+						</a>
+		</div>
+		{% endif %}
+		{% if page.active_section == 'lifestyle'%}
+		<div class="cards-container">
+			{% if page.active_card == 'amazonprime'%}
+			<a href="amazon_prime.html" class="single-card-container active">
+				{% else %}
+				<a href="amazon_prime.html" class="single-card-container">
+					{% endif %}
+
+					<div class="card-design">
+						<div class="offer-logo">
+							<img src="{{site.img_path}}/amazon_prime_logo.png" alt="" style="height: 20px;"
+								class="hide-on-mobile">
+							<img src="{{site.img_path}}/amazon_prime_logo.png" alt="" style="max-height: 14px;"
+								class="show-on-mobile">
+						</div>
+						<div class="offer-image">
+							<img src="{{site.img_path}}/icons/lifestyle-icon.png" alt="Food offer">
+						</div>
+					</div>
+					<div class="card-name">
+						Amazon Prime
+					</div>
+
+				</a>
+				{% if page.active_card == 'bbstar'%}
+				<a href="bbstar.html" class="single-card-container active">
+					{% else %}
+					<a href="bbstar.html" class="single-card-container">
+						{% endif %}
+
+						<div class="card-design">
+							<div class="offer-logo">
+								<img src="{{site.img_path}}/bbstar-logo.png" alt="" style="height: 25px;"
+									class="hide-on-mobile">
+								<img src="{{site.img_path}}/bbstar-logo.png" alt="" style="max-height: 19px;"
+									class="show-on-mobile">
+							</div>
+							<div class="offer-image">
+								<img src="{{site.img_path}}/icons/lifestyle-icon.png" alt="Food offer">
+							</div>
+						</div>
+						<div class="card-name">
+							bbstar
+						</div>
+
+					</a>
+					{% if page.active_card == 'urbancompany'%}
+					<a href="urban_company.html" class="single-card-container active">
+						{% else %}
+						<a href="urban_company.html" class="single-card-container">
+							{% endif %}
+
+							<div class="card-design">
+								<div class="offer-logo">
+									<img src="{{site.img_path}}/urbancompany-logo.png" alt="" style="height: 25px;"
+										class="hide-on-mobile">
+									<img src="{{site.img_path}}/urbancompany-logo.png" alt="" style="max-height: 19px;"
+										class="show-on-mobile">
+								</div>
+								<div class="offer-image">
+									<img src="{{site.img_path}}/icons/lifestyle-icon.png" alt="Food offer">
+								</div>
+							</div>
+							<div class="card-name">
+								Urban Company
+							</div>
+
+						</a>
+
+						{% if page.active_card == 'lenskart'%}
+						<a href="lenskart.html" class="single-card-container active">
+							{% else %}
+							<a href="lenskart.html" class="single-card-container">
+								{% endif %}
+
+								<div class="card-design">
+									<div class="offer-logo">
+										<img src="{{site.img_path}}/lenskart-logo.svg" alt="" style="max-height: 26px;"
+											class="hide-on-mobile">
+										<img src="{{site.img_path}}/lenskart-logo.svg" alt="" style="max-height: 23px;"
+											class="show-on-mobile">
+									</div>
+									<div class="offer-image">
+										<img src="{{site.img_path}}/icons/lifestyle-icon.png" alt="Food offer">
+									</div>
+								</div>
+								<div class="card-name">
+									Lenskart Gold
+								</div>
+
+							</a>
+
+		</div>
+		{% endif %}
+	</div>
+</section>

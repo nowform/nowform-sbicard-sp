@@ -1,0 +1,479 @@
+---
+title: Page Title
+active_section: dining
+active_card: zomatogold
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/zomato-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/zomatopro-logo.svg" alt="Zomato Gold offer by AURUM"
+						class="zomato-logo">
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 60px;">
+					An exclusive membership program for dining and more
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta" onclick="form_smooth_scroll('#form');">
+						Get your complimentary membership
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="row carousel-section offers-disabled">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Avail these great offers, and much more
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="owl-carousel">
+					<div class="owl-carousel-elem">
+						<div class="disabled-overlay"></div>
+						<div class="overlay-text">
+							50% off at Tonino
+						</div>
+						<img src="{{site.img_path}}/dining-1.png">
+					</div>
+					<div class="owl-carousel-elem">
+						<div class="disabled-overlay"></div>
+						<div class="overlay-text">
+							50% off at Tonino
+						</div>
+						<img src="{{site.img_path}}/dining-2.png">
+					</div>
+					<div class="owl-carousel-elem">
+						<div class="disabled-overlay"></div>
+						<div class="overlay-text">
+							50% off at Tonino
+						</div>
+						<img src="{{site.img_path}}/dining-3.png">
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Experience restaurant launches, pub crawls, new menu previews, cookouts with chefs, wine
+								tasting sessions, brewery tours, and much more
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/zomato-cookouts.png" class="1-1-drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/zomato-online-discounts.png"
+									class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Additional 20% off on Online Food ordering, over the existing offers.
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Up to 40% off on over 8000 partner restaurants across India.
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/food-offer.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/zomato-unlimited.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Truly Unlimited! With no limit on the number of people who can benefit on the table nor
+								a limit on the number of times you can use the benefits.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Priority food delivery for Pro members
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/zomato-priority.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail Zomato Pro Membership
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						AURUM Cardholders are required to make their first transaction using their AURUM Card to become
+						eligible for the membership.
+
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Apply for Zomato Pro Membership on AURUM website / SBI Card App for AURUM.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						Once activated, AURUM Cardholder receives the Zomato Pro Membership ID with a validity of 1 Year
+						from the date the membership is activated.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						For existing Zomato Pro members, the membership gets extended by 1 year
+					</div>
+					<div class="grid-item">
+						<span class="bullet">5</span>
+					</div>
+					<div class="grid-item">
+						In case the AURUM Cardholder is an existing Zomato Pro member with an Unlock pack/ Weekday plan,
+						etc. then the membership would be upgraded to an Annual all India membership.
+					</div>
+					<div class="grid-item">
+						<span class="bullet">6</span>
+					</div>
+					<div class="grid-item">
+						Membership ID and Validity will be visible on AURUM Website, SBI Card App for AURUM
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="row become-member" id="form">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Become a member to experience Zomato Pro benefits
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<form class="membership-form">
+
+					<div class="form-element">
+						<label class="label-style">
+							Name
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="" onblur="validateInput('name',this)">
+							<span class="error-text">This field is mandatory</span>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<label class="label-style">
+							Mobile Number
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="" onblur="validateInput('mobile',this)"
+								pattern="^\d{10}$">
+							<span class="error-text">This field is mandatory</span>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<label class="label-style">
+							Email ID
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="" onblur="validateInput('email',this)">
+							<span class="error-text">This field is mandatory</span>
+						</div>
+					</div>
+
+					<div class="form-element hide-on-mobile">
+
+					</div>
+
+					<div class="form-element">
+						<div class="checkbox-container">
+							<div class="checkbox">
+								<input type="checkbox" id="checkbox-tncs">
+								<label for="checkbox-tncs">
+									<img src="{{site.img_path}}/checkbox-tick.svg" alt="">
+								</label>
+							</div>
+							<span>
+								I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">terms and
+									conditions</a> of Zomato Pro.
+							</span>
+						</div>
+					</div>
+				</form>
+
+				<div class="button-container">
+					<button class="button-styling">
+						Get your complimentary membership
+					</button>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="row cities-available">
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Cities available in
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="text">
+					Delhi NCR , Mumbai ,Bengaluru , Pune , Hyderabad, Chennai, Kolkata, Ahmedabad , Jaipur, Chandigarh,
+					Lucknow, Nagpur , Indore, Ludhiana, Coimbatore, Kochi, Surat , Vadodara, Bhopal , Kanpur, Agra,
+					Bhubaneswar, Raipur, Visakhapatnam, Nashik ,Aurangabad, Patna, Dehradun, Gwalior, Guwahati, Ranchi,
+					Udaipur, Amritsar, Jalandhar, Varanasi, Jabalpur, Mangalore, Patiala, Goa, Mysore, Vijayawada.
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries connect with Zomato Pro at <a href="mailto:gold@zomato.com">gold@zomato.com</a>
+						or Zomato app chat with
+						your membership number.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>Only Primary Cardholders of AURUM are eligible for this membership.</li>
+						<li>AURUM Cardholders are required to make their first transaction using their AURUM Card to
+							become eligible for the membership</li>
+						<li>Customer to avail membership from Web or SBI card APP</li>
+						<li>Standard Zomato Pro Exclusion Days: Christmas Eve; Christmas Day, New Year& Eve, New Year
+							Day, Valentine Day</li>
+						<li>Neither SBI Card nor Zomato shall be liable if any restaurant has temporarily or permanently
+							shut down its operations</li>
+
+						<div class="initially-hide">
+							<li>Zomato’s <a target="_blank" href="https://www.zomato.com/conditions">Terms and
+									Conditions</a> and
+								<a target="_blank" href="https://www.zomato.com/privacy">Privacy Policy</a> along with
+								Zomato Pro
+
+								<a target="_blank"
+									href="https://www.zomato.com/conditions?country_id=1&amp;page_type=SUBSCRIPTION&amp;gold_plan_page=1">Terms</a>
+								are applicable</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations</li>
+
+
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/owlcarousel_js.html %}
+	{% include imports/custom_js.html %}
+	<script src="assets/js/zomato_disabled.js"></script>
+	<script>
+		function form_smooth_scroll(id_selector) {
+			$('html, body').animate({
+				scrollTop: $(id_selector).offset().top - $('header.page-header').height() - $('nav.desktop-nav').height()
+			}, 100);
+		}
+		function validateInput(type, el) {
+			console.log(type);
+
+			switch (type) {
+				case 'name':
+					if (el.value.trim().length < 1) {
+						el.parentElement.parentElement.classList.add('has-error')
+						el.innerHTML = 'This field is mandatory'
+					} else {
+						el.parentElement.parentElement.classList.remove('has-error')
+					}
+
+					break;
+				case 'mobile':
+					console.log(el);
+					if (el.value.trim().length == 0) {
+						el.parentElement.parentElement.classList.add('has-error')
+						el.parentElement.querySelector('.error-text').innerHTML = 'This field is mandatory'
+					}
+					else if ((el.value.trim().length > 0) && (el.value.trim().length < 10 || !el.value.trim().match(/^\d{10}$/))) {
+						el.parentElement.parentElement.classList.add('has-error');
+						el.parentElement.querySelector('.error-text').innerHTML = 'This input is invalid';
+
+					} else {
+						el.parentElement.parentElement.classList.remove('has-error')
+					}
+
+					break;
+				case 'email':
+					console.log(el);
+					if (el.value.trim().length == 0) {
+						el.parentElement.parentElement.classList.add('has-error')
+						el.parentElement.querySelector('.error-text').innerHTML = 'This field is mandatory'
+					}
+					else if ((el.value.trim().length > 0) && (!el.value.trim().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/))) {
+						el.parentElement.parentElement.classList.add('has-error');
+						el.parentElement.querySelector('.error-text').innerHTML = 'This input is invalid';
+
+					} else {
+						el.parentElement.parentElement.classList.remove('has-error')
+					}
+
+					break;
+
+				default:
+					break;
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+---
+title: Page Title
+company_name: Tata Cliq
+active_section: default
+voucher_type: AURUM Milestone Benefit
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="assets/css/vouchers.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		{% include vouchers_header.html %}
+
+		<section class="row offer-img">
+			<div class="col-12 px-0">
+				<div class="image-container">
+
+					<div class="background-image">
+						<img src="{{site.img_path}}/cliq-bg.png" alt="Tata Cliq voucher">
+					</div>
+
+					<div class="foreground-image-container">
+						<div class="foreground-image">
+							<img src="{{site.img_path}}/cliq-voucher.png" alt="Tata Cliq voucher">
+
+							<div class="foreground-image-text-container">
+								<h4 class="company-name">
+									Tata Cliq
+								</h4>
+								<h2 class="offer-text">
+									₹1500
+								</h2>
+							</div>
+
+							<!-- <div class="welcome-voucher-notification">
+								Welcome Voucher
+							</div> -->
+
+							<div class="show-on-mobile gradient-overlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-information">
+
+			<div class="col-12 px-0">
+
+				<div class="info-container">
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/gift-hand.png">
+						<span>
+							What’s Inside
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>
+							Earn TATA Cliq Voucher worth ₹1500, with a Validity of 6 Months on doing monthly spends of
+							₹1
+							lakh in previous month
+						</li>
+					</ul>
+
+					<!-- second list -->
+
+					<!-- <h3 class="info-heading">
+						
+						<img src="{{site.img_path}}/nationality-icon.svg">
+						<span>
+							Available in
+						</span>
+					</h3>
+
+					<ul class="main-info no-items">
+						Ahmedabad, Bengaluru, Delhi, Gurugram, Hyderabad, Jaipur, Mumbai, Noida, Pune
+					</ul> -->
+
+					<!-- third list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/list-ticked.png">
+						<span>
+							Terms and conditions
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>Earn TATA Cliq Voucher worth ₹1500, with a Validity of 6 Months- on achieving monthly
+							spends of ₹1 lakh</li>
+						<li>E-Voucher to eligible card holders will be sent within one month of eligibility.</li>
+						<li>Protect the E-Gift card number and PIN to avoid misuse</li>
+						<li>E-Gift Voucher is combination of 16-digit Card number and 6-digit PIN</li>
+						<li>E-Gift Voucher is received by customers through Email or SMS</li>
+						<li>Valid at all platforms of Tata Unistore Limited in India</li>
+						<li>Valid on all merchandise</li>
+						<li>Redeemable during all Sales & Promotional Pricing Offers.</li>
+						<li>Valid for redemption during End of Season Sales.</li>
+
+						<li>Any disputes/s shall be subject to the jurisdiction of the courts in Mumbai.</li>
+						<li>To check balance mail to be sent to CS team (hello@tatacliq.com) with the card number.
+							This option is to be used if the details are not available to the customers in their CLiQ
+							Cash
+							account.</li>
+						<li>Any dispute/s relating to Tata Unistore Limited shall be subject to the exclusive
+							jurisdiction of
+							Mumbai.</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

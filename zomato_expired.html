@@ -1,0 +1,159 @@
+---
+title: Page Title
+active_section: dining
+active_card: zomatogold
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/zomato-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/zomatopro-logo.svg" alt="Zomato Gold offer by AURUM"
+						class="zomato-logo">
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 20px;">
+					Your Zomato Pro membership has expired. We hope you enjoyed your experience.
+				</div>
+
+				<div class="offer-cta-container expired">
+					<a href="#">
+						For membership-related queries, click here.
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="row membership-details expired">
+			<div class="col px-0">
+				<div class="details-container">
+					<div class="detail">
+						<h4 class="detail-heading">
+							ZOMATO PRO MEMBERSHIP ID
+						</h4>
+						<h6 class="detail-text">
+							1137373
+						</h6>
+					</div>
+
+					<div class="detail">
+						<h4 class="detail-heading">
+							VALID TILL
+						</h4>
+						<h6 class="detail-text">
+							2019-01-01
+						</h6>
+					</div>
+
+					<div class="detail">
+						<h4 class="detail-heading">
+							MEMBERSHIP STATUS
+						</h4>
+						<h6 class="detail-text">
+							Expired
+						</h6>
+					</div>
+				</div>
+				<div class="button-container">
+					<button class="button-styling">
+						Membership Expired
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries connect with Zomato on Zomato App with your membership number.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs expired">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>Only Primary Cardholders of AURUM are eligible for this membership.</li>
+						<li>AURUM Cardholders are required to make their first transaction using their AURUM Card to
+							become eligible for the membership</li>
+						<li>Customer to avail membership from Web or SBI card APP</li>
+						<li>Standard Zomato Pro Exclusion Days: Christmas Eve; Christmas Day, New Year& Eve, New Year
+							Day, Valentine Day</li>
+						<li>Neither SBI Card nor Zomato shall be liable if any restaurant has temporarily or permanently
+							shut down its operations</li>
+
+						<div class="initially-hide">
+							<li>Zomato’s <a target="_blank" href="https://www.zomato.com/conditions">Terms and
+									Conditions</a> and
+								<a target="_blank" href="https://www.zomato.com/privacy">Privacy Policy</a> along with
+								Zomato Pro
+
+								<a target="_blank"
+									href="https://www.zomato.com/conditions?country_id=1&amp;page_type=SUBSCRIPTION&amp;gold_plan_page=1">Terms</a>
+								are applicable</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations</li>
+
+
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+
+</body>
+
+</html>

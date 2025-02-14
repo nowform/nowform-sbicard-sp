@@ -1,0 +1,236 @@
+---
+title: Page Title
+active_card: bbstar
+active_section: lifestyle
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/bbstar-banner.png"  class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/bbstar-logo.png" alt="bbstar logo offer by AURUM" class="uc-logo">
+				</div>
+
+				<div class="offer-tagline">
+					Make grocery shopping a breeze with free delivery, monthly cashback, priority slots, and exclusive discounts
+				</div>
+			</div>
+		</section>
+
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Enjoy 6 months complimentary bbstar membership
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/bbstar-6-months.png" class="1-1-drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/bbstar-free-delivery.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Get free delivery on any order above ₹600, compared to ₹1200 for other bigbasket users
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Extra discounts on the top products in your city
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/bbstar-discount-products.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/bbstar-cashback.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								For the first 3 months, get ₹100 cashback on the first order delivery every month
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail bbstar membership
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						Make your first transaction using your AURUM Card to avail bbstar membership within 12 working
+						days.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Use E-code sent via SMS on bbstar App to activate the membership
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						The code apply now option is available at bbstar signup page.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						bbstar membership will be valid for 6 months from the date of availing the offer
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries, contact <a href="tel:18605002000">1800
+							500 2000</a> to write to <a href="mailto:aurum@sbicard.com">aurum@sbicard.com</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>AURUM Cardholders get bbstar 6-month membership absolutely free</li>
+						<li>This code is applicable only for new members.</li>
+						<li>Offer applicable only on BigBasket app and m-site</li>
+						<li>No payment required to avail the offer</li>
+						<li>Cannot be clubbed with any other offer</li>
+						<li>BigBasket has right to cancel membership if found to be of fraudulent nature</li>
+						<li>BigBasket reserves the right to change / modify / add / delete any of the terms & conditions
+							of the offer at any time without notice</li>
+						<li>SBI Card & bbstar shall not be liable if any partner has temporarily or permanently shut
+							down its operations.</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/owlcarousel_js.html %}
+	{% include imports/custom_js.html %}
+	<!-- <script src="assets/js/zomato_disabled.js"></script> -->
+</body>
+
+</html>

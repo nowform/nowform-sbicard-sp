@@ -1,0 +1,192 @@
+---
+title: Page Title
+active_section: default
+nav_bottom_border: bottom_border
+nav_page: rewards
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/rewards-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text airport">
+				<div class="offer-logo">
+					<h2 class="section-header-style">AURUM Rewards</h2>
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 40px;">
+					Enter the dedicated AURUM Rewards Portal for a wide range of exclusive rewards and benefits curated
+					just for
+					you
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta" onclick="window.open('rewards_header.html');">
+						Proceed to AURUM Rewards<img id="external-icon"
+							src="{{site.img_path}}/feather-external-link.svg" style="width: 24px;">
+					</button>
+					<span class="external-window">You will be redirected to an external portal.</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offers-instore rewards-portal">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>Travel</h4>
+								<span class="subtext">
+									<span class="emph">Flights</span><br>Book domestic and International flights to all
+									the destinations
+									<br>
+									<span class="emph">Cabs/Cars</span> <br>Transfers, Self- Driven Car rentals,
+									Chauffeured Car rental, and On-Premise partnership with Cab apps
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/airplane.png" class="airplane-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/hospitality.png" class="hospitality-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								<h4>Hospitality</h4>
+								<span class="subtext">
+									Book Hotels, Hostels and B&B’s<br>Booking to Handpicked Boutique Staycations
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>Entertainment</h4>
+								<span class="subtext">
+									<span class="emph">Global shows/Indian Events</span><br> Marquee events across
+									Sports, Music and Art<br>Both Global and Indian Global Tours
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/entertainment-movie.png" class="entertainment-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/gift-card.png" class="giftcard-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								<h4>Gift Cards / Offers</h4>
+								<span class="subtext">
+									Gifting Experience from premium brands<br>This would also serve as a catalogue
+									across categories
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row make-a-booking rewards-portal">
+			<div class="col px-0">
+				<div class="button-container">
+					<button class="button-styling" onclick="window.open('rewards_header.html');">
+						Proceed to AURUM Rewards<img src="{{site.img_path}}/feather-external-link.svg"
+							style="width: 24px;">
+					</button>
+					<span class="external-window-message">
+						You will be redirected to an external portal.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any support on the membership and benefits under it, contact <a href="tel:0000000000">000
+							000 0000</a>.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+</body>
+
+</html>

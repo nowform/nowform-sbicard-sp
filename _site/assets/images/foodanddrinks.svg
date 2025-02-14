@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="185" viewBox="0 0 170 185">
+    <defs>
+        <linearGradient id="prefix__a" x1="2.775%" x2="99.967%" y1="38.558%" y2="62.109%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="80.7%"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="86.64%" x2="11.072%" y1="79.902%" y2="18.238%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="16.31%" stop-color="#CECECE"/>
+            <stop offset="47.12%" stop-color="#777"/>
+            <stop offset="72.3%" stop-color="#373737"/>
+            <stop offset="90.54%" stop-color="#0F0F0F"/>
+            <stop offset="100%"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="-.007%" x2="99.991%" y1="49.994%" y2="49.994%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="15.3%" stop-color="#C8C8C8"/>
+            <stop offset="34.09%" stop-color="#8C8C8B"/>
+            <stop offset="51.32%" stop-color="#5C5C5B"/>
+            <stop offset="66.41%" stop-color="#3A3A38"/>
+            <stop offset="78.78%" stop-color="#252523"/>
+            <stop offset="86.87%" stop-color="#1D1D1B"/>
+        </linearGradient>
+        <linearGradient id="prefix__d" x1="-.012%" x2="99.986%" y1="50.02%" y2="50.02%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="80.7%"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1="49.939%" x2="49.939%" y1="92.952%" y2="2.208%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="20.92%" stop-color="#B4B4B4"/>
+            <stop offset="41.01%" stop-color="#747474"/>
+            <stop offset="59.08%" stop-color="#424242"/>
+            <stop offset="74.81%" stop-color="#1E1E1E"/>
+            <stop offset="87.56%" stop-color="#080808"/>
+            <stop offset="95.76%"/>
+        </linearGradient>
+        <linearGradient id="prefix__f" x1="-10.278%" x2="103.661%" y1="50.232%" y2="49.486%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="15.3%" stop-color="#C8C8C8"/>
+            <stop offset="34.09%" stop-color="#8C8C8B"/>
+            <stop offset="51.32%" stop-color="#5C5C5B"/>
+            <stop offset="66.41%" stop-color="#3A3A38"/>
+            <stop offset="78.78%" stop-color="#252523"/>
+            <stop offset="86.87%" stop-color="#1D1D1B"/>
+        </linearGradient>
+        <linearGradient id="prefix__g" x1="0%" x2="99.993%" y1="49.918%" y2="49.918%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="15.3%" stop-color="#C8C8C8"/>
+            <stop offset="34.09%" stop-color="#8C8C8B"/>
+            <stop offset="51.32%" stop-color="#5C5C5B"/>
+            <stop offset="66.41%" stop-color="#3A3A38"/>
+            <stop offset="78.78%" stop-color="#252523"/>
+            <stop offset="86.87%" stop-color="#1D1D1B"/>
+        </linearGradient>
+        <linearGradient id="prefix__h" x1="67.026%" x2="39.099%" y1="73.673%" y2="20.545%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="14.23%" stop-color="#C8C8C8"/>
+            <stop offset="31.72%" stop-color="#8C8C8B"/>
+            <stop offset="47.75%" stop-color="#5C5C5B"/>
+            <stop offset="61.8%" stop-color="#3A3A38"/>
+            <stop offset="73.3%" stop-color="#252523"/>
+            <stop offset="80.83%" stop-color="#1D1D1B"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="94" cy="32" r="32" fill="url(#prefix__a)" fill-rule="nonzero"/>
+        <ellipse cx="94.5" cy="32" fill="url(#prefix__b)" fill-rule="nonzero" rx="24.5" ry="25"/>
+        <ellipse cx="34" cy="147.5" fill="url(#prefix__c)" fill-rule="nonzero" rx="34" ry="33.5"/>
+        <path fill="url(#prefix__d)" fill-rule="nonzero" d="M112 151c0 18.784-15.216 34-34 34s-34-15.216-34-34"/>
+        <path fill="url(#prefix__e)" fill-rule="nonzero" d="M129 108H138V177H129z"/>
+        <g stroke="#F8FAFB" stroke-linecap="round" stroke-width=".75">
+            <path d="M18.365.855L18.365 37.103M.15 18.979L36.579 18.979M5.478 6.156L31.23 31.802M29.904 4.962L6.804 32.996" transform="translate(75 13)"/>
+        </g>
+        <path fill="url(#prefix__f)" fill-rule="nonzero" d="M134 109c-19.89 0-36-16.177-36-36.147V35h72v37.853C170 92.823 153.89 109 134 109z"/>
+        <path fill="url(#prefix__g)" fill-rule="nonzero" d="M156 181h-46c0-6.074 4.765-11 10.64-11h24.72c5.875 0 10.64 4.926 10.64 11z"/>
+        <path stroke="#F8FAFB" stroke-linecap="round" stroke-width=".75" d="M23 124s11.647 9 23 0M33.745 127S28.27 108.743 47 99"/>
+        <ellipse cx="26.597" cy="110.378" fill="#F8FAFB" fill-rule="nonzero" rx="3.844" ry="9.175" transform="rotate(-44.372 26.597 110.378)"/>
+        <path fill="url(#prefix__h)" fill-rule="nonzero" d="M169.899 74.773c0 .297-.043.593-.064.89-.699 7.498-4.065 20.652-18.422 28.68-15.839 8.875-29.962 2.944-35.891-.445-.17-.106-.339-.212-.508-.296-1.588-.954-2.457-1.631-2.457-1.631s-3.642-2.33-7.305-7.35c-.212-.318-.445-.636-.677-.975-2.71-4.003-5.315-9.532-6.247-16.733-.021-.149-.042-.297-.042-.466-.064-.615-.106-1.25-.127-1.886-.17-2.075-.212-4.236-.085-6.566l.042-.042c.995-.975 18.613-17.75 42.244-5.486 2.69 1.398 5.145 3.198 7.475 5.147 3.578 2.965 11.984 8.155 22.085 2.414 0 0 .021.106.021.318.042.636.127 2.224-.042 4.427z"/>
+    </g>
+</svg>

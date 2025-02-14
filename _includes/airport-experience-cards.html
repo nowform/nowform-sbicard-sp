@@ -1,0 +1,54 @@
+<section  id="airport-experience-cards" class="row airport-experience-cards membership-cards{% if page.nav_page == 'airport' %} memberships-page {% endif %}">
+	<div class="col-12 px-0" style="overflow:hidden">
+
+		<div class="cards-container">
+
+			{% if page.active_card == 'lounge-benefits'%}
+				<a href="airport_membership.html" class="single-card-container active">
+				{% else %}
+					<a href="airport_membership.html" class="single-card-container">
+					{% endif %}
+					<div class="card-design">
+						<div class="offer-logo">
+							<img src="" alt="" style="max-height: 20px;"
+								class="hide-on-mobile">
+							<img src="" alt="" style="max-height: 22px;"
+								class="show-on-mobile">
+						</div>
+						<div class="offer-image">
+							<img src="{{site.img_path}}/icons/sofa.svg" alt="Food offer">
+						</div>
+					</div>
+					<div class="card-name">
+						Lounge Benefits
+					</div>
+
+				</a>
+
+				{% if page.active_card == 'coffee-on-the-go'%}
+					<a href="coffee_benefits.html" class="single-card-container active">
+					{% else %}
+						<a href="coffee_benefits.html" class="single-card-container">
+						{% endif %}
+
+						<div class="card-design">
+							<div class="offer-logo">
+								<img src="" alt="" style="width: 63px;"
+									class="hide-on-mobile">
+								<img src="" alt="" style="max-height: 20px;"
+									class="show-on-mobile">
+							</div>
+							<div class="offer-image">
+								<img src="{{site.img_path}}/icons/coffee.svg" alt="Food offer">
+							</div>
+						</div>
+						<div class="card-name">
+							Coffe on the go Privileges
+						</div>
+
+					</a>
+
+				</div>
+
+			</div>
+		</section>

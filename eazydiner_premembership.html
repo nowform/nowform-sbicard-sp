@@ -1,0 +1,366 @@
+---
+title: Page Title
+active_card: eazydiner
+active_section: dining
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/eazydiner-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/eazydiner-logo.svg" alt="Zomato Gold offer by AURUM"
+						class="eazydiner-logo">
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 35px;">
+					Embark on a journey of culinary delights with complimentary dining membership, a hearty bon appétit
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta" onclick="window.location.href = '#form';">
+						Get your complimentary membership
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Guaranteed minimum 25% Discount and up to 50% discount in over 2000+ of the best
+								restaurants in India
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/restaurant-dining.png" class="dining-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/concierge.png" class="concierge-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Dedicated 24×7 Culinary Concierge service with an exclusive number <span
+									class="nowrap phone">+91 786 100 4400</span> for AURUM customers using EazyDiner Prime
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								In addition to the guaranteed 25% discount, a complimentary premium beverage for all
+								diners on the table at over 100 premium restaurants of the country
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/drinks.png" class="drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/invitation.png" class="invitation-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Invitation to curated events and special redemption offers for AURUM customers using
+								EazyDiner Prime
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail EazyDiner Prime Membership
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						Make your first transaction using your AURUM Card
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Login to AURUM App or <a href="https://aurumcreditcard.com">aurumcreditcard.com</a> to activate
+						the membership
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						Once activated, card holder gets the EazyDiner Prime Membership ID. The membership is valid for
+						1 Year. For existing EazyDiner Prime members, the membership gets extended by 1 year
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						Membership ID and Validity will be visible on <a
+							href="https://aurumcreditcard.com">aurumcreditcard.com</a>, SBI Card App for AURUM and
+						EazyDiner App or Website
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="row become-member" id="form">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Become a member to experience EazyDiner Prime benefits
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<form class="membership-form">
+
+					<div class="form-element">
+						<label class="label-style">
+							Name
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="Subahlakshmi Chandra">
+						</div>
+					</div>
+
+					<div class="form-element">
+						<label class="label-style">
+							Mobile Number
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="9876543210">
+						</div>
+					</div>
+
+					<div class="form-element">
+						<label class="label-style">
+							Email ID
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="subahlakshmi@gmail.com">
+						</div>
+					</div>
+
+					<div class="form-element">
+
+					</div>
+
+					<div class="form-element">
+						<div class="checkbox-container">
+							<div class="checkbox">
+								<input type="checkbox" id="checkbox-tncs">
+								<label for="checkbox-tncs">
+									<img src="{{site.img_path}}/checkbox-tick.svg" alt="">
+								</label>
+							</div>
+							<span>
+								I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">terms and
+									conditions</a> of EazyDiner Prime.
+							</span>
+						</div>
+					</div>
+				</form>
+
+				<div class="button-container">
+					<button class="button-styling">
+						Get your complimentary membership
+					</button>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="row cities-available">
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Cities available in
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="text">
+					Agra, Ahmedabad, Bangaluru, Chandigarh, Chennai, Delhi/NCR, Goa, Hyderabad, Indore, Jaipur, Kolkata,
+					Lucknow, Mumbai, Pune
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries contact EazyDiner Prime exclusive number: <a href="tel:7861004400">+91 786 100
+							4400</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>AURUM Cardholders get yearly EazyDiner prime Membership complimentary with AURUM
+							CARD</li>
+						<li>Only Primary card holders of AURUM are eligible for this Membership</li>
+						<li>Make your first transaction using your AURUM Card to become eligible for this membership.
+						</li>
+						<li>Customer to avail membership from Web or SBI Card App for AURUM</li>
+						<li>The restaurants and the offers are dynamic as we constantly improve the product, hence the
+							offers at restaurants may change without any prior notice. In case there are any concerns,
+							please
+							call the EazyDiner Prime hotline at 786 100 4400.</li>
+						<li>All 1+1 deals are valid for a minimum of 2 guests and indicate a 50% discount on your meal.
+							In
+							case of 3 guests, 2 guests will be charged, and 1 guest will be complimentary.</li>
+						<li>Please inform the restaurant upon your arrival on the reservation made and the offer as
+							applicable.</li>
+
+						<div class="initially-hide">
+							<li>SBI Card & EazyDiner shall not be liable for the experience at the partner restaurant as
+								we assist
+								in fulfilling the reservations with special offers only.</li>
+							<li>SBI Card & EazyDiner shall not be liable if any restaurant has temporarily or
+								permanently shut
+								down its operations. In case there are any concerns, please call the EazyDiner Prime
+								helpline no
+								at 786 100 4400.</li>
+							<li>Only one subscription can be used for a single reservation.</li>
+							<li>One complimentary alcoholic beverage per person will offered to cardmembers at select
+								restaurants. The restaurants offering the same shall have the same mentioned on the
+								restaurants
+								page as the additional benefit.</li>
+							<li>The membership card cannot be cancelled or exchanged for cash.</li>
+							<li>The membership validity cannot be extended under any circumstances.</li>
+							<li>In the event of any dispute, parties agree to exclusive jurisdiction of courts of New
+								Delhi.</li>
+							<li>Company & Buyer are not responsible in case of non-availability of reservation at a
+								restaurant.
+								However, an alternate slot at best available date / time shall be made available.</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations</li>
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+</body>
+
+</html>

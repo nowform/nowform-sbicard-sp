@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>feather-phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D7C36B" offset="0%"></stop>
+            <stop stop-color="#9F7E2E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.0.1-Zomato-Post-Membership" transform="translate(-1106.000000, -24.000000)">
+            <g id="feather-phone" transform="translate(1106.000000, 24.000000)">
+                <g id="Icon" transform="translate(1.000000, 1.000000)" stroke="url(#linearGradient-1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <g id="Icon-Group" transform="translate(0.833333, 0.833333)">
+                        <path d="M18.3333333,13.6766667 L18.3333333,16.4266667 C18.3354287,16.942883 18.119794,17.4360618 17.7394047,17.7850428 C17.3590155,18.1340238 16.8491253,18.3064641 16.335,18.26 C13.5142644,17.953504 10.8047492,16.9896325 8.42416667,15.4458333 C6.20934244,14.0384419 4.33155813,12.1606576 2.92416667,9.94583333 C1.37497989,7.55443698 0.410889418,4.83174501 0.11,1.99833333 C0.0636837761,1.48579964 0.234916007,0.977398055 0.581868631,0.597319301 C0.928821255,0.217240547 1.41954472,0.000484632719 1.93416667,-9.01256977e-05 L4.68416667,-9.01256977e-05 C5.60437538,-0.00905681073 6.38870911,0.665470192 6.5175,1.57666667 C6.6335711,2.45672758 6.84882867,3.32083298 7.15916667,4.1525 C7.41100709,4.82246878 7.24993048,5.57773908 6.74666667,6.08666667 L5.5825,7.25083333 C6.88742585,9.54575034 8.78758299,11.4459075 11.0825,12.7508333 L12.2466667,11.5866667 C12.7555943,11.0834029 13.5108646,10.9223262 14.1808333,11.1741667 C15.0125004,11.4845047 15.8766058,11.6997622 16.7566667,11.8158333 C17.6784325,11.945872 18.3564242,12.7460599 18.3333333,13.6766667 Z" id="Icon-Path"></path>
+                    </g>
+                </g>
+                <rect id="ViewBox" fill-rule="nonzero" x="0" y="0" width="22" height="22"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

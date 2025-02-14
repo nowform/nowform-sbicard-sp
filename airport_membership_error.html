@@ -1,0 +1,322 @@
+---
+title: Page Title
+nav_bottom_border: bottom_border
+nav_page: airport
+active_section: default
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+		{% include error-banner.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/airport-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text airport">
+				<div class="offer-logo">
+					<h2 class="section-header-style">Airport Experience</h2>
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 40px;">
+					Whether it be for business or for pleasure, trust Destination AURUM to turn every journey into a
+					special experience
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta">
+						Proceed to your dashboard <img id="external-icon"
+							src="{{site.img_path}}/feather-external-link.svg" style="width: 24px;">
+					</button>
+					<span class="external-window">You will be redirected to an external portal.</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offers-instore airport">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-6 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>International Benefits</h4>
+								<span class="subtext">
+									<span class="emph">International Lounge Benefits</span><br>
+									Complimentary lifetime membership to the Dragon Pass membership program via
+									Dreamfolks activated from day one worth $400
+									<br>
+									Unlimited Airport Lounge access complimentary across 1000+ lounges Outside India
+									<br>
+									Access fee of $27 + applicable taxes will be charged on your AURUM Card for lounge
+									utilisation on Dreamfolks membership within India
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/airport-lounge.png" class="airport-lounge-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-100 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-4 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/spa.png" class="spa-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								<h4>Domestic Benefits</h4>
+								<span class="subtext">
+									<span class="emph">Domestic Lounge Benefits through Visa/Mastercard
+										program</span><br>
+									4 lounges access complimentary per quarter within India using your AURUM Card<br>
+									<span class="emph">Domestic Spa Benefits</span><br>
+									One Domestic Spa access complimentary per calendar Quarter within India through
+									Dreamfolks
+									<br>
+									Usage fee of ₹1725+ applicable taxes will be charged on your AURUM Card for spa
+									utilization beyond complimentary visits
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row make-a-booking airport">
+			<div class="col px-0">
+				<div class="button-container">
+					<button class="button-styling">
+						Proceed to your dashboard <img id="external-icon"
+							src="{{site.img_path}}/feather-external-link.svg" style="width: 24px;">
+					</button>
+					<span class="external-window-message">
+						You will be redirected to an external portal.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any support on the membership and benefits under it, contact <a href="tel:18001234109">1800
+							1234 109</a> to write to <a href="mailto:Helpdesk@dreamfolks.in">helpdesk@dreamfolks.in</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>Cardholder(s) Dreamfolks Dragonpass membership will get activated once they are onboarded.
+						</li>
+						<li>The services can be accessed through <a href="https://aurumcreditcard.com"
+								target="_blank">aurumcreditcard.com</a> or SBI Card App for AURUM or
+							through a physical card (available
+							on request)</li>
+						<li>The International membership is provided to primary cardholder of Aurum Card and is valid
+							for unlimited validity period. For list of lounges, please visit <a
+								href="https://en.dragonpass.com.cn/airports" target="_blank">this link</a> for
+							international lounges and <a href="https://www.dreamfolks.in/india-lounges"
+								target="_blank">this link</a> for Indian lounges.</li>
+						<li>How to use –
+						</li>
+						<ol>
+							<li>Login to <a href="https://aurumcreditcard.com" target="_blank">aurumcreditcard.com</a>
+								or SBI Card App
+								for AURUM</li>
+							<li>Refer to Airport experience program in Dashboard and click on Dreamfolks Dragonpass
+								program.</li>
+							<li>You will be able to view the services and entitlement at your preferred location</li>
+							<li>Click on the desired services and generate QR code to access the lounge/ spa</li>
+							<li>Present the QR code at the participating International Lounge as a member.</li>
+							<li>The lounge representative will scan and take your consent as “Record of Visit”
+								chargeslip.</li>
+							<li>Please ensure to validate the details before signing the chargeslip. Your issued
+								chargeslip makes you liable for any
+								applicable charges as per the product features.</li>
+						</ol>
+
+						<div class="initially-hide">
+							<li>On request, you may apply for Physical Dreamfolks dragonpass membership card by calling
+								our helpline no.
+								1860 180 1290/1860 500 1290 or 39020202 (Prefix Local STD code). Priority Pass will be
+								delivered to your
+								billing address within 10 days of receipt of request.</li>
+							<li>Complimentary visits are applicable only for international lounges i.e. lounge under
+								Dreamfolks Dragonpass
+								Program outside India. Complimentary visits are not applicable for lounges within India.
+							</li>
+							<li>Membership details and charges are as given below:
+								<table class="table-responsive">
+									<tr>
+										<th></th>
+										<th>International Lounge</th>
+										<th>Domestic Terminal Lounge (Within India)</th>
+										<th>International Terminal Lounge (Within India)</th>
+										<th>Domestic Spa</th>
+									</tr>
+									<tr>
+										<th>Membership Fee</th>
+										<td>Complimentary</td>
+										<td>Complimentary</td>
+										<td>Complimentary</td>
+										<td>Complimentary</td>
+									</tr>
+									<tr>
+										<th>Complimentary Usage</th>
+										<td>Unlimited</td>
+										<td>NA</td>
+										<td>NA</td>
+										<td>1 Visit / Calendar Quarter</td>
+									</tr>
+									<tr>
+										<th>Usage Fee - Cardholder</th>
+										<td>NA</td>
+										<td>$27 + taxes</td>
+										<td>$27 + taxes</td>
+										<td>₹1725 beyond complimentary visits</td>
+									</tr>
+									<tr>
+										<th>Usage Fee - Guests</th>
+										<td>$27 + taxes</td>
+										<td>$27 + taxes</td>
+										<td>$27 + taxes</td>
+										<td>₹1725 beyond complimentary visits</td>
+									</tr>
+								</table>
+							</li>
+							<li>Charges for Dreamfolks Dragonpass usage will be levied directly in the Cardholder’s
+								statement basis the
+								consent provided on the digital medium for the paid services post 30 to 60 days of the
+								visit.</li>
+							<li>All domestic lounge visits (both International & Domestic airports within India) are
+								chargeable at $27 Plus
+								GST. All guests lounge visits are chargeable at $27 Plus GST. Guests are required to be
+								on the same flight
+								to enjoy lounge access using the same DragonPass membership. All purchased Lounge visits
+								can be used until
+								the membership is expired..</li>
+							<li>Domestic Spa visits after exhausting the complimentary visits are chargeable at ₹1725.
+							</li>
+							<li>Exchange rate applied to the charge would be the Exchange rate applicable on the day of
+								the debit to the
+								cardholder’s card account and not as on date of usage of the Priority Pass.</li>
+							<li>In the event of Cardholder cancelling or terminating his/her SBI Card account the
+								Priority Pass Membership
+								ceases to exist for the Cardholder.</li>
+							<li>Dreamfolks Dragonpass membership is not transferable & may not be used by any person
+								other than the named
+								cardholder.</li>
+							<li>All participating lounges are owned by third party operators & the Cardholder needs
+								to abide by the rules and
+								regulations of the visited lounge.</li>
+							<li>The lounge access is subject to the Terms and Conditions of Dreamfolks and can be
+								changed from time to time
+								without prior notification to the Cardholder.</li>
+							<li>To avoid overcrowding, participating lounges may reserve the right to fix a maximum stay
+								policy.</li>
+							<li>Participating Airport Lounges have no contractual obligation to announce flights, nor to
+								remind customer of their flight
+								boarding times, and Eligible Customer are solely responsible for abiding by boarding
+								times stated on their flight tickets.
+								Accordingly, for the avoidance of doubt, lounge shall not be liable under any
+								circumstances in relation to any failure to board
+								flights (for any reason) by an Eligible customer</li>
+							<li>Lounge access is subject to the Cardholder holding a valid ticket of travel on the same
+								day in an airline flying out
+								of the airport in which the lounge is present.</li>
+							<li>Alcoholic beverages will not be a part of offer at the lounges situated at domestic
+								departure/terminals.</li>
+							<li>Lounge service will be free of charge for children below 2 years old. For children,
+								above 2 years old, standard full
+								fee shall apply in international lounges subject to terms and conditions of the lounge.
+							</li>
+							<li>Any infant who causes upset to other users may be asked to vacate the lounge facility.
+							</li>
+							<li>Lounge will not be liable for any of your loss caused by missing of flights or flight
+								delay due to use of Lounge
+								service(s).</li>
+							<li>SBI Card reserves the right to alter, change or withdraw the feature at any time without
+								due notice to the
+								Cardholder.</li>
+							<li>SBI Card or Dreamfolks are not responsible for the non-availability or loss arising due
+								to non-availability of lounge
+								or associated services.</li>
+							<li>Lost/Stolen and damaged Dreamfolks plastics need to be intimated to SBI Card for a fresh
+								card to be issued.</li>
+							<li>For any complaints or support, customer may contact DreamFolks at: India: 18001234109 or
+								Email:
+								helpdesk@dreamfolks.in</li>
+
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+</body>
+
+</html>

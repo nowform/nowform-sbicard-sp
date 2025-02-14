@@ -1,0 +1,729 @@
+---
+title: Page Title
+nav_bottom_border: bottom_border
+nav_page: golf
+active_section: default
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/golf-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text airport">
+				<div class="offer-logo">
+					<h2 class="section-header-style">Golf Privileges</h2>
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 40px;">
+					Tee off with AURUM to enjoy an indulgent golfing experience
+				</div>
+
+				
+			</div>
+		</section>
+
+		<section class="row offers-instore airport">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-6 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								4 complimentary golf visits & 12 complimentary golf lessons in a year
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/golf-icon.png" class="airport-lounge-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-100 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-4 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/subsequent-visits-icon.png" class="spa-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								50% discount on subsequent visits (capped to one round per month)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="row make-a-booking airport">
+			<div class="col px-0">
+				<form>
+				<div class="form-element" id="accept-tnc">
+					<div class="checkbox-container" style="margin-bottom: 30px;justify-content:center;">
+						<div class="checkbox">
+							<input type="checkbox" id="checkbox-tncs">
+							<label for="checkbox-tncs">
+								<img src="{{site.img_path}}/checkbox-tick.svg" alt="">
+							</label>
+						</div>
+						<span>
+							I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">terms and
+								conditions</a> of AURUM Golf Privileges.
+						</span>
+					</div>
+				</div>
+			</form>
+				<div class="button-container">
+					<button class="button-styling" onclick="window.location.hash = 'redirect'" disabled id="avail-cta" style="background-color: #999;cursor: not-allowed;">
+						Avail AURUM Golf Privileges <img id="external-icon"
+							src="{{site.img_path}}/feather-external-link.svg" style="width: 24px;">
+					</button>
+					<span class="external-window-message">
+						You will be redirected to an external portal.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail AURUM Golf Privileges
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						First Time Customer – The Customer will register itself on teepassindia.thriwe.com by clicking on the Sign up option and provide the following details:
+						<ol style="padding-left: 20px;">
+							<li>First & Last Name</li>
+							<li>Mobile Number</li>
+							<li>Email Address</li>
+							<li>First 6 digits of the card</li>
+						</ol>
+						After providing these details, the account will have to get activated by doing a pre-authorization of INR 1, which will be refunded back to the customer within 24 hours of the transaction.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Once the user has registered on the website and created the password, user will get the username on his registered email. Customer can then login to view his golf benefit details. In order to place a booking, customer will have to click on ‘Book Your Golf“ button.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						After clicking on to the “Book Your Golf ” button select the golf course, date and time of play basis the offered program. Also, under the comment section the customer can mention the name of the golf club member or the guest the customer wants to play with.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						On the last step of placing a complimentary booking, the customer will have to make a transaction of INR 1 or a pre-auth of INR 1.
+					</div>
+					<div class="grid-item">
+						<span class="bullet">5</span>
+					</div>
+					<div class="grid-item">
+						Once the customer submits the request, an email will go to his/ her registered email address. This email will be treated as the booking acknowledgement email.
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<!-- <section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any support on the membership and benefits under it, contact <a href="tel:18001234109">1800
+							1234 109</a> to write to <a href="mailto:Helpdesk@dreamfolks.in">helpdesk@dreamfolks.in</a>
+					</span>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>The program offers complimentary/Discounted golf rounds to the qualifying SBI AURUM Visa
+							cardholders:
+							<ol style="padding-left: 20px;">
+								<li>4 complimentary golf visits per annum (No capping)</li>
+								<li>12 complimentary golf lessons per annum (No capping)</li>
+								<li>50% discount on subsequent visits beyond the complimentary sessions (capped to max 1 a
+									month)</li>
+							</ol>
+						</li>
+						<li>Complimentary/Discounted Golf Program is being provided to AURUM Visa Card
+							Holders and in no-way should be construed as a complimentary/discounted
+							from the respective Golf Providers or the Service Provider.</li>
+						<li>This facility/benefit is being facilitated to AURUM Visa card members through “Thriwe Consulting Pvt
+							Ltd” (Thriwe) who represents as a Service Provider.</li>
+						<li>Complimentary/Discounted Golf is subject to availability of slots with Partner Golf Course
+							Facilities.
+						</li>
+						<li>Only the Green Fees booked in advance by the cardholder is complimentary/Discounted. The
+							Card member needs to pay for any additional service availed during the round as charges may
+							be.</li>
+						<li>Golf booking has to be made 5 clear days in advance from the date of play.</li>
+						<li>No cancellation or re-scheduling requests will be considered within 3 clear days from the date of
+							play.</li>
+						<li>All bookings on Public Holidays would be charged as per the weekend rates.</li>
+
+						<div class="initially-hide">
+							<li>If cancellation would be done within 3 clear days from the date of play the card member would
+								be fully charged and the amount would not be refunded.</li>
+							<li>Golf Course facility rules &amp; local rules apply and subscribers to this program should adhere to
+								the same including but not limited to dress code, rules of facility, producing identity proof as
+								required. Partner faculties reserves the right to reject/restrict service in event of not fulfilling
+								these requirements.
+								<ol style="padding-left: 20px;">
+									<li>The Golf Course partners will not entertain any correspondence/enquiries and/or attempts for
+										bookings directly from the participating card members and the partners will not respond directly
+										to any such enquiries</li>
+									<li>Access to the partner golf course facilities is only limited to the services mentioned in the
+										program and the card members participating in this programme or their guests may not have
+										access to the other facilities such as restaurant, swimming pool, gymnasium etc.</li>
+								</ol>
+							</li>
+							<li>SBI Cards and Payment Services Limited (formerly known as SBI Cards and Payment Services
+								Private Limited) (“SBICPSL”) or Visa or the Service Provider is not responsible in any way for
+								the quality and availability of the service provided by the partner golf courses.</li>
+							<li>SPICPSL or Visa or the Service Provider is not responsible for or liable for any action, claims,
+								demands, losses, damages, cost, charges and expenses which the client may suffer, sustain
+								or incur including but not limited to changes or cancellations of the services provided under
+								this programme.</li>
+							<li>In case the cardholder avails services beyond the offer, then the cardholder will be subjected to the full fee for the services.</li>
+							<li>SBICPSL reserves the right to change / modify / add / delete any of the terms &amp; conditions
+								of the offer at any time without notice</li>
+							<li>SBICPSL and / or Visa shall not be liable if the service provider has temporarily or
+								permanently shut down its operations.</li>
+							<li>Any information that is required to be provided by the cardholder on the microsite of the
+								service provider for registration to avail the offer shall be subject to the terms and
+								conditions and privacy policy of the microsite of the service provider.</li>
+							<li>Once the cardholder avails the offer and enter the golf club premises the cardholder will
+								be bound by the T&C of Golf club and SBICPSL will not be responsible in any manner for any
+								damages caused to the golf club or its associates for the actions or inactions of the
+								cardholder.</li>
+							<li>In case of any dispute, decision of SBICPSL shall be final and binding.</li>
+							<li>SBICPSL may engage, hire, use the services of agent(s) and/or any third party(ies) for the
+								purpose of providing marketing or sales related services or any other related services in
+								relation to its products  on its behalf and the customer may be required to deal with such
+								 agents/third parties/service providers with respect to such product/services.</li>
+							<li>These terms & conditions shall be governed and interpreted as per the laws of India and
+								any dispute relating to these terms & conditions shall be subjected to exclusive jurisdiction
+								of the courts of Delhi.</li>
+							<li>These terms & conditions shall be governed and interpreted as per the laws of India and
+								any dispute relating to these terms & conditions shall be subjected to exclusive jurisdiction of
+								the courts of Delhi.</li>
+							<li>Visa or the Service Provider shall not be considered liable or in default of providing the golf
+								round or lesson services if such performance is prevented by adverse conditions, which is
+								beyond its control.</li>
+							<li>Visa & their partners and agents, employees, directors, officers, representatives, shareholders,
+								Golf Courses and other suppliers of goods and services accept no liability from any and all claims for damages for death, personal injury or property damage which the cardmember, his/her
+								personal representatives, heirs, next-of-kin, assigns and insurers may have, or which may
+								hereafter accrue, as a result of using the services provided in this programme.</li>
+							<li>The following golf course/coaching partners are included in the program with respect to their
+								weekday/weekend policies.</li>
+							<li>Golf Program is completely non-transferrable hence benefit will be liableavailable
+								only to the cardholders.</li>
+							<li>The golf courses listed as part of this programme are subject to change</li>
+							<li>Golf rounds:
+								<table class="table-responsive">
+									<tr>
+										<th>Sr No</th>
+										<th>Golf Course</th>
+										<th>City</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Gulmohar Greens Golf & Country Club (Indian)</td>
+										<td>Ahmedabad</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Gulmohar Greens Golf & Country Club (Foreign)</td>
+										<td>Ahmedabad</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Kalhar Blues and Greens</td>
+										<td>Ahmedabad</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Kensville Golf Club</td>
+										<td>Ahmedabad</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Glade One</td>
+										<td>Ahmedabad</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Clover Greens</td>
+										<td>Bangalore</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Zion Hills (Champions Reef)</td>
+										<td>Bangalore</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Eagleton Golf Village</td>
+										<td>Bangalore</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Prestige Golfshire</td>
+										<td>Bangalore</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Panchkula Golf Club</td>
+										<td>Chandigarh</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Madras Gymkhana Club (Indian)</td>
+										<td>Chennai</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Madras Gymkhana Club (Foreign)</td>
+										<td>Chennai</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Golden Greens Golf Resort</td>
+										<td>Gurgaon</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Karma Lakeland</td>
+										<td>Gurgaon</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Classic Golf and Country Club</td>
+										<td>Gurgaon</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Boulder Hills Golf Club</td>
+										<td>Hyderabad</td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>Tollygunge Golf Club*</td>
+										<td>Kolkata</td>
+									</tr>
+									<tr>
+										<td>18</td>
+										<td>9 Aces Golf Greens and Academy</td>
+										<td>Mumbai</td>
+									</tr>
+									<tr>
+										<td>19</td>
+										<td>Willingdon Sports Club*</td>
+										<td>Mumbai</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>Kharghar Golf Club</td>
+										<td>Mumbai</td>
+									</tr>
+									<tr>
+										<td>21</td>
+										<td>Jaypee Greens Golf Club</td>
+										<td>Noida</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>Jaypee Greens Golf Club (Expat)</td>
+										<td>Noida</td>
+									</tr>
+									<tr>
+										<td>23</td>
+										<td>Jaypee Wishtown Golf Club</td>
+										<td>Noida</td>
+									</tr>
+									<tr>
+										<td>24</td>
+										<td>Poona Golf Club</td>
+										<td>Pune</td>
+									</tr>
+									<tr>
+										<td>25</td>
+										<td>Pinewoods Golf Club</td>
+										<td>Pune</td>
+									</tr>
+									<tr>
+										<td>26</td>
+										<td>The Belvedere Golf & Country Club</td>
+										<td>Ahmedabad</td>
+									</tr>
+								</table>
+							</li>
+							<li>Coaching:
+								<table class="table-responsive">
+									<tr>
+										<th>Sr No</th>
+										<th>Facility</th>
+										<th>Mins</th>
+										<th>City</th>
+										<th>Inclusions</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Gulmohar Greens Golf & Country Club</td>
+										<td>30</td>
+										<td>Ahmedabad</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Golden Swan Golf Academy</td>
+										<td>30</td>
+										<td>Mumbai</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Prestige Golfshire</td>
+										<td>30</td>
+										<td>Bangalore</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>AKDR</td>
+										<td>30</td>
+										<td>Chennai</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Boulder Hills Golf & Country Club</td>
+										<td>30</td>
+										<td>Hyderabad</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>ProTouch Golf Academy</td>
+										<td>30</td>
+										<td>Kolkata</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Poona Golf Club</td>
+										<td>30</td>
+										<td>Pune</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Qutub Golf Club</td>
+										<td>30</td>
+										<td>New Delhi</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Karma Lakelands</td>
+										<td>30</td>
+										<td>Gurgaon</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Siri Fort</td>
+										<td>30</td>
+										<td>New Delhi</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Kalhaar Blues & Greens Golf Club</td>
+										<td>30</td>
+										<td>Ahmedabad</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>CGA Golf Academy</td>
+										<td>30</td>
+										<td>Chandigarh</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Royal Jaipur Golf Club</td>
+										<td>30</td>
+										<td>Jaipur</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Noida Golf Club</td>
+										<td>30</td>
+										<td>Noida</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Jaypee Greens Golf Club</td>
+										<td>30</td>
+										<td>Noida</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Kensville Golf & Country Club</td>
+										<td>30</td>
+										<td>Ahmedabad</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>Panchkula Golf Club</td>
+										<td>30</td>
+										<td>Chandigarh</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>18</td>
+										<td>Let's Golf</td>
+										<td>30</td>
+										<td>Mumbai</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>19</td>
+										<td>Jaypee Wishtown</td>
+										<td>30</td>
+										<td>Noida</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>Eagleton Golf Village</td>
+										<td>30</td>
+										<td>Bangalore</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>21</td>
+										<td>Hamoni</td>
+										<td>30</td>
+										<td>Gurgaon</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>Pinewoods Golf Club</td>
+										<td>30</td>
+										<td>Pune</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>23</td>
+										<td>The Belvedere Golf & Country Club</td>
+										<td>30</td>
+										<td>Ahmedabad</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+									<tr>
+										<td>24</td>
+										<td>Golden Greens Golf & Country Club</td>
+										<td>30</td>
+										<td>Gurgaon</td>
+										<td>Golf pro fees, 50 balls , 1
+											equipment and driving range fee</td>
+									</tr>
+								</table>
+							</li>
+							
+
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	<div id="redirect" class="sp-modal in" role="dialog">
+		<div class="sp-modal-body text-center noPadding">
+			<div class="sp-modal-padding-wrapper">
+				<h2 class="sp-modal-heading subheading">
+					<!-- <a class="modal-back">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+							<path fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round"
+								stroke-linejoin="round" stroke-width="2.7" d="M0.857 0L8.479 8 0.857 16"
+								transform="matrix(-1 0 0 1 10 2)" />
+						</svg>
+
+					</a> -->
+					Disclaimer</h2>
+				<div class="sp-modal-content scrollable">
+					<p class="sbi-subtext black">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<br>
+						<br>
+
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class=" modal-buttons">
+					<!-- <a href="#knowMore" class="underlined">Know more</a> -->
+					<button class="button button-styling" onclick="window.location.hash = ''"
+						id="onboarded-button">Proceed</button>
+					<a href="#" class="underlined">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/custom_js.html %}
+	<script>
+		$('#checkbox-tncs').click(function () {
+        //check if checkbox is checked
+        if ($(this).is(':checked')) {
+			console.log('checked');
+            $('#avail-cta').removeAttr('disabled');
+			$('#avail-cta').css('cursor', 'pointer');
+			$('#avail-cta').css('background-color', '#c2a63f'); //enable input
+
+        } else {
+            $('#avail-cta').attr('disabled', true);
+			$('#avail-cta').css('cursor', 'not-allowed');
+			$('#avail-cta').css('background-color', '#999'); //disable input
+        }
+    });
+	</script>
+</body>
+
+</html>

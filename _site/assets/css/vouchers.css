@@ -1,0 +1,177 @@
+section.offer-img {
+	background: #101010;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+	
+	section.offer-img div.image-container {
+		margin: 0 21.3%;
+		height: 339px;
+		overflow: hidden;
+		position: relative;
+	}
+
+		section.offer-img div.background-image {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+		}
+
+			section.offer-img div.background-image img {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+
+	section.offer-img div.foreground-image-container {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		height: 100%;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+		section.offer-img div.foreground-image-container div.foreground-image {
+			position: relative;
+		}
+
+		section.offer-img div.foreground-image-text-container {
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+			right: 20px;
+		}
+
+		section.offer-img div.foreground-image-text-container h4.company-name {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #ffffff;
+			margin: 0px;
+			margin-bottom: 4px;
+		}
+
+		section.offer-img div.foreground-image-text-container h2.offer-text {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			font-weight: 600;
+			color: #ffffff;
+			margin: 0px;
+		}
+
+	section.offer-img div.welcome-voucher-notification {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		background-color: rgba(194, 166, 63, 0.6);
+		border-radius: 10px;
+		font-size: 10px;
+		font-weight: 600;
+		padding: 4px 7px;
+		color: #000;
+		z-index: 11;
+	}
+	
+	section.offer-img div.image-container div.gradient-overlay {
+		position: absolute;
+		z-index: 10;
+		top: 0px;
+		left: 0px;
+		height: 50%;
+		width: 100%;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(255, 255, 255, 0)));
+		background-image: -o-linear-gradient(top, #000000, rgba(255, 255, 255, 0));
+		background-image: linear-gradient(to bottom, #000000, rgba(255, 255, 255, 0));
+	}
+
+
+section.offer-information {
+	background: #101010;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+		section.offer-information div.info-container {
+			margin: 0 21.3%;
+			position: relative;
+			background: #000;
+			padding: 36px 6%;
+			-webkit-box-shadow: 0 0 5px 0 #081017;
+			        box-shadow: 0 0 5px 0 #081017;
+		}
+		
+			section.offer-information div.info-container h3.info-heading {
+				margin: 0px;
+			}
+
+				section.offer-information div.info-container h3.info-heading img {
+					margin-right: 10px;
+					width: 35px;
+				}
+
+				section.offer-information div.info-container h3.info-heading span {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 14px;
+					font-weight: normal;
+					color: #b1b1b1;
+				}
+
+			section.offer-information div.info-container ul.main-info {
+				margin: 0px;
+				margin-left: 80px;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				font-weight: normal;
+				color: #b1b1b1;
+				line-height: 1.71;
+				margin-bottom: 20px;
+			}
+
+			section.offer-information div.info-container ul.main-info.no-items {
+				margin-left: 52px;
+			}
+
+				section.offer-information div.info-container ul.main-info span.emph {
+					font-weight: 600;
+					color: #ffffff;
+				}
+
+@media screen and (max-width: 850px) {
+	section.offer-img div.image-container {
+		margin: 0 6.8%;
+	}
+	section.offer-img div.background-image {
+		display: none;
+	}
+	section.offer-img div.foreground-image-container {
+		height: unset;
+	}
+	section.offer-img div.foreground-image-container div.foreground-image {
+		width: 100%;
+	}
+	section.offer-img div.foreground-image-container div.foreground-image img {
+		width: 100%;
+	}
+	section.offer-img div.image-container {
+		height: auto;
+	}
+
+	section.offer-information div.info-container {
+		margin: 0 6.8%;
+		padding: 16px 7px;
+	}
+
+}
+
+
+
+
+
+

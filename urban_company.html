@@ -1,0 +1,262 @@
+---
+title: Page Title
+active_card: urbancompany
+active_section: lifestyle
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/urbancompany-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/urbancompany-logo.png" alt="urbancompany logo" class="uc-logo">
+				</div>
+
+				<div class="offer-tagline">
+					A hassle-free 1-year complimentary membership that meets your every need for Home Service, all at
+					the comfort of your doorstep.
+				</div>
+			</div>
+		</section>
+
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								1-year complimentary Urban Company membership.
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/urbancompany-1-year.png" class="1-1-drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/urbancompany-discount.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Get Rs. 100 off on every order up to a max of Rs. 1200.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Offers discount on Home Services, Appliance, Electronic Repairs, Plumbers, Carpenters,
+								Pest Control and Cleaning
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/urbancompany-services.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail Urban Company Membership
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						AURUM Cardholders are required to make their first transaction using their AURUM Card to become
+						eligible for the membership.
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Eligible cardholder will get Urban Company E-code over SMS with in 12 working days
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">3</span>
+					</div>
+					<div class="grid-item">
+						Customer to visit Urban Company app or website
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">4</span>
+					</div>
+					<div class="grid-item">
+						Select any service from Appliance Service & Repairs, Plumbers, Electricians, Carpenters, Pest
+						Control and Cleaning and add 1-year complimentary subscription in cart
+					</div>
+					<div class="grid-item">
+						<span class="bullet">5</span>
+					</div>
+					<div class="grid-item">
+						Apply E-code sent via SMS or Email to avail the subscription free.
+					</div>
+					<div class="grid-item">
+						<span class="bullet">6</span>
+					</div>
+					<div class="grid-item">
+						The membership is not applicable for customers who are already member of Urban company
+						membership
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- <section class="row cities-available">
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Cities available in
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="text">
+					Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi NCR, Hyderabad, Indore, Jaipur,
+					Kolkata, Ludhiana, Lucknow, Kochi, Mumbai, Nagpur, Pune
+				</div>
+			</div>
+		</section> -->
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries, contact <a href="tel:18605002000">1800
+							500 2000</a> to write to <a href="mailto:aurum@sbicard.com">aurum@sbicard.com</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>Only Primary Cardholders of AURUM are eligible for this membership</li>
+						<li>AURUM Cardholders are required to make their first transaction using their AURUM Card to
+							become eligible for the membership</li>
+						<li>First Transaction has to be done from AURUM card to become eligible customer </li>
+						<li>The 1-year complimentary home subscription on Urban Company can be availed by applying the
+							E-code shared by SBI Card</li>
+						<li>E-code is valid upto 6 months from the date of receipt</li>
+						<li>E-code benefit is available on - Appliance Service & Repairs, Plumbers, Electricians,
+							Carpenters, Pest Control and Cleaning categories.</li>
+
+						<div class="initially-hide">
+							<li>E-code can be availed only once per new user</li>
+							<li>E-code valid only for services availed in India</li>
+							<li>E-code benefit cannot be clubbed with any existing offer on Urban Company</li>
+							<li>E-code valid on both discounted and non discounted services</li>
+							<li>Urban Company reserves the right to change / modify / add / delete any of the terms &
+								conditions of the offer at any time without notice</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations </li>
+							<li>For any further terms and conditions, kindly refer Urban Company App </li>
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/owlcarousel_js.html %}
+	{% include imports/custom_js.html %}
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+---
+title: Page Title
+company_name: Fitpass
+voucher_type: AURUM Voucher
+active_section: default
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="assets/css/vouchers.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		{% include vouchers_header.html %}
+
+		<section class="row offer-img">
+			<div class="col-12 px-0">
+				<div class="image-container">
+
+					<div class="background-image">
+						<img src="{{site.img_path}}/fitpass-voucher.png" alt="Amazon Prime voucher">
+					</div>
+
+					<div class="foreground-image-container">
+						<div class="foreground-image">
+							<img src="{{site.img_path}}/fitpass-voucher.png" alt="Amazon Prime voucher">
+
+							<div class="foreground-image-text-container">
+								<h4 class="company-name">
+									Fitpass
+								</h4>
+								<h2 class="offer-text">
+									One year complimentary membership
+								</h2>
+							</div>
+
+							<!-- <div class="welcome-voucher-notification">
+								Welcome Voucher
+							</div> -->
+
+							<div class="show-on-mobile gradient-overlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-information">
+
+			<div class="col-12 px-0">
+
+				<div class="info-container">
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/gift-hand.png">
+						<span>
+							What’s Inside
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>
+							Universal Membership to India’s Largest Fitness Network
+						</li>
+						<li>
+							Workout anywhere, anytime at top gyms and fitness studio
+						</li>
+						<li>
+							Workout however you like: Gym workouts, Yoga, Zumba, Pilates, MMA, Kickboxing, Crossfit,
+							Spinning and many
+						</li>
+					</ul>
+
+					<!-- second list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/location-pin.png">
+						<span>
+							Available in
+						</span>
+					</h3>
+
+					<ul class="main-info no-items">
+						Ahmedabad, Bengaluru, Delhi, Gurugram, Hyderabad, Jaipur, Mumbai, Noida, Pune
+					</ul>
+
+					<!-- third list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/list-ticked.png">
+						<span>
+							Terms and conditions
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>This is an invitation only prepaid membership, which can only be availed by eligible AURUM
+							card
+							customers by following the activation procedure as communicated.</li>
+						<li>Only Primary Cardholders of AURUM are eligible for FitPass Membership</li>
+						<li>Make your first transaction using your AURUM Card to avail Fitpass membership</li>
+						<li>Eligible Card holders registering under this offer will be able to avail their complimentary
+							12 months
+							FITPASS membership through the FITPASS mobile application.</li>
+						<li>FITPASS will confirm activation to the card holder through an email/SMS within 48 hours of
+							registration.</li>
+						<li>A Member is required to make a prior reservation through the FITPASS mobile application for
+							accessing any partner gym/fitness studio. Only one subscription can be used for a single
+							reservation
+							on the FITPASS Mobile Application by a Member.</li>
+						<li>The list of gyms and fitness studios in the network are dynamic and are subject to change at
+							any time
+							and SBI Card & FITPASS shall not be liable if any gym/fitness studio has temporarily or
+							permanently
+							shut down its operations.</li>
+						<li>The Member expressly understands that FITPASS acts as an intermediary service provider to
+							assist in
+							fulfilment only and will not be responsible for the experience at the partner gym and
+							fitness studio and
+							disclaims any liability with respect to any claim brought by the Member or any third party
+							in relation to
+							any use of/availing of the services and products offered/provided by third party service/
+							partner gym
+							and fitness studio providers through FITPASS.</li>
+						<li>The Terms and Conditions of FITPASS which are available (click here) are incorporated herein
+							by
+							reference constitute the entire agreement between the Member and FITPASS with respect to the
+							subject matter hereof and supersedes and replaces all prior or contemporaneous
+							understandings or
+							agreements, written or oral, regarding such subject matter.</li>
+						<li>The Member cannot assign, transfer or novate its rights, benefits, covenants and/or
+							obligations under
+							the Membership and terms and conditions of FITPASS. No person other than a registered Member
+							has
+							any rights under the general terms and conditions of FITPASS.</li>
+						<li>As part of the offer, the Members agree to receive such marketing and promotional materials
+							via mail,
+							SMS, email, etc. in connection with products and services of FITPASS.</li>
+						<li>For any FITPASS related queries, please call at +91-8882-997700.</li>
+						<li>Sbi Card reserves the right to change / modify / add / delete any of the terms & conditions
+							of the
+							offer at any time without notice</li>
+						<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+							operations.</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

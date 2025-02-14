@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="23px" viewBox="0 0 33 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dashicons-email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.0.1-Priority-Service" transform="translate(-781.000000, -1121.000000)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(730.000000, 1104.000000)">
+                <g id="dashicons-email" transform="translate(48.000000, 9.000000)">
+                    <g id="Icon" transform="translate(3.000000, 8.000000)" fill="#000000">
+                        <path d="M3.79148148,0 L28.8192593,0 C31.1803704,0 32.3703704,1.13083333 32.3703704,3.43083333 L32.3703704,19.5691667 C32.3703704,21.85 31.1803704,23 28.8192593,23 L3.79148148,23 C1.43037037,23 0.24037037,21.85 0.24037037,19.5691667 L0.24037037,3.43083333 C0.24037037,1.13083333 1.43037037,0 3.79148148,0 Z M16.2959259,16.4833333 L29.027037,5.88416667 C29.4803704,5.50083333 29.8392593,4.61916667 29.2725926,3.83333333 C28.7248148,3.0475 27.7237037,3.02833333 27.0625926,3.5075 L16.2959259,10.9058333 L5.54814815,3.5075 C4.88703704,3.02833333 3.88592593,3.0475 3.33814815,3.83333333 C2.77148148,4.61916667 3.13037037,5.50083333 3.5837037,5.88416667 L16.2959259,16.4833333 Z" id="Icon-Shape"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="38" height="38"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

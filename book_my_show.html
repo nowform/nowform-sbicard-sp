@@ -1,0 +1,241 @@
+---
+title: Page Title
+active_card: bms
+active_section: entertainment
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/owlcarousel_css.html %}
+	{% include imports/custom_css.html %}
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/bms-banner.png" class="center-on-mobile" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/bms-logo.png" alt="BMS logo" class="uc-logo">
+				</div>
+
+				<div class="offer-tagline">
+					With benefits worth Rs.12,000 every year, your AURUM card is the golden ticket to the ultimate
+					silver screen experience.
+				</div>
+			</div>
+		</section>
+
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Get up to 4 movie tickets worth Rs.1,000 every month on bookmyshow.com
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/bms-discount.png" class="1-1-drinks-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/bms-2-tickets.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Offer applicable on 2 Transactions, on maximum 2 tickets per transaction, per month.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								Maximum discount is Rs.250 per ticket.
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/bms-250-discount.png" class="foodoffer-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/bms-convenience.png" class="fooddelivery-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								Convenience Fee would be chargeable.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col px-0 line-gradient-parent">
+				<div class="line-gradient"></div>
+			</div>
+		</div>
+
+		<section class="row how-to-avail">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					How to avail BookMyShow offer
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<div class="how-to-container">
+
+					<div class="grid-item">
+						<span class="bullet">1</span>
+					</div>
+					<div class="grid-item">
+						Customer needs to select the Avail Offers Section and select Offers from the Menu in Book my
+						show App or Website
+					</div>
+
+					<div class="grid-item">
+						<span class="bullet">2</span>
+					</div>
+					<div class="grid-item">
+						Customer would get another drop down menu from which customer needs to select the AURUM Card
+						option & click on the “Apply Offer” button.
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- <section class="row cities-available">
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Cities available in
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="text">
+					Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi NCR, Hyderabad, Indore, Jaipur,
+					Kolkata, Ludhiana, Lucknow, Kochi, Mumbai, Nagpur, Pune
+				</div>
+			</div>
+		</section> -->
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any queries, contact <a href="tel:18605002000">1800
+							500 2000</a> to write to <a href="mailto:aurum@sbicard.com">aurum@sbicard.com</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>To avail the discount, customer needs to select the Avail Offers Section and select Offers
+							from the Menu. </li>
+						<li>Post this customer would get another drop down menu from which customer needs to select the
+							AURUM Card option & click on the “Apply Offer” button.</li>
+						<li>The discounts as mentioned above shall be applicable for Maximum of four (4) tickets booked
+							in a month.</li>
+						<li>Two tickets can be booked maximum in a transaction.</li>
+						<li>The time gap between two transactions using the offer on AURUM card will be 24 hours. </li>
+						<li>The Customer is required to pay the Convenience Fee as levied on the booking.</li>
+						<li>The Offer on the movie tickets can be redeemed ONLY on <a href="https://www.bookmyshow.com"
+								target="_blank">www.bookmyshow.com</a> website.</li>
+				</div>
+				</ul>
+
+
+			</div>
+		</section>
+		{% include footer.html %}
+	</div>
+
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/owlcarousel_js.html %}
+	{% include imports/custom_js.html %}
+	<!-- <script src="assets/js/zomato_disabled.js"></script>/ -->
+</body>
+
+</html>

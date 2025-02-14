@@ -1,0 +1,136 @@
+---
+title: Page Title
+company_name: bbstar
+active_section: default
+voucher_type: AURUM Voucher
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="assets/css/vouchers.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		{% include vouchers_header.html %}
+
+		<section class="row offer-img">
+			<div class="col-12 px-0">
+				<div class="image-container">
+
+					<div class="background-image">
+						<img src="{{site.img_path}}/bbstar-voucher-small.png" alt="Amazon Prime voucher">
+					</div>
+
+					<div class="foreground-image-container">
+						<div class="foreground-image">
+							<img src="{{site.img_path}}/bbstar-voucher-small.png" alt="Amazon Prime voucher">
+
+							<div class="foreground-image-text-container">
+								<h4 class="company-name">
+									bbstar
+								</h4>
+								<h2 class="offer-text">
+									Six months complimentary membership
+								</h2>
+							</div>
+
+
+
+							<div class="show-on-mobile gradient-overlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-information">
+
+			<div class="col-12 px-0">
+
+				<div class="info-container">
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/gift-hand.png">
+						<span>
+							What’s Inside
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>bbstar membership program is valid for a duration of 6 months</li>
+						<li>Get free delivery on any order above ₹600, compared to ₹1200 for other bigbasket users</li>
+						<li>Extra discounts on the top products in your city</li>
+						<li>For the first 3 months, get ₹100 cashback on the first order delivery every month</li>
+					</ul>
+
+					<!-- second list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/location-pin.png">
+						<span>
+							Available in
+						</span>
+					</h3>
+
+					<ul class="main-info no-items">
+						Ahmedabad, Anand, Bangalore, Bhopal, Chennai, Chandigarh, Coimbatore, Delhi, Gurgaon, Hosur,
+						Hyderabad, Indore, Jaipur, Kanpur, Kochi, Kolkata, Lucknow, Meerut, Mumbai, Nagpur, Patna, Pune,
+						Surat, Vishakhapatnam
+					</ul>
+
+					<!-- third list -->
+
+					<h3 class="info-heading">
+
+						<img src="{{site.img_path}}/icons/list-ticked.png">
+						<span>
+							Terms and conditions
+						</span>
+					</h3>
+
+					<ul class="main-info">
+						<li>AURUM Cardholders get bbstar 6-month membership absolutely free</li>
+						<li>Only Primary card holders of AURUM are eligible for bbstar Membership</li>
+						<li>Make your first transaction using your AURUM Card to avail bbtar membership within 12
+							working days.</li>
+						<li>Use E-code via SMS on bbstar App to activate the membership</li>
+						<li>bbstar membership will be valid for 6 months from the date of availing the offer</li>
+						<li>This code is applicable only for new members.</li>
+						<li>The code apply now option is available at bbstar signup page.</li>
+						<li>Offer applicable only on BigBasket app and m-site</li>
+						<li>No payment required to avail the offer</li>
+						<li>Cannot be clubbed with any other offer</li>
+						<li>BigBasket has right to cancel membership if found to be of fraudulent nature</li>
+						<li>BigBasket reserves the right to change / modify / add / delete any of the terms & conditions
+							of the
+							offer at any time without notice</li>
+						<li>SBI Card & bbstar shall not be liable if any partner has temporarily or permanently shut
+							down its
+							operations.</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

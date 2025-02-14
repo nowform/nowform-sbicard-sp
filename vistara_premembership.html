@@ -1,0 +1,446 @@
+---
+active_section: default
+title: Page Title
+active_card: vistara
+nav_page: memberships
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include imports/bootstrap_css.html %}
+	{% include imports/custom_css.html %}
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{% include entire_header.html %}
+
+		{% include membership-cards.html %}
+
+		<section class="row offer-banner">
+			<div class="col-12 background-banner">
+				<img src="{{site.img_path}}/main-banner.png" alt="AURUM by SBI Card">
+			</div>
+
+			<div class="col-12 container-for-text">
+				<div class="offer-logo">
+					<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
+					<span class="divider"></span>
+					<img src="{{site.img_path}}/vistara-logo.svg" alt="Zomato Gold offer by AURUM" class="vistara-logo">
+				</div>
+
+				<div class="offer-tagline" style="margin-bottom: 39px;">
+					Whether it be for business or for pleasure, trust Destination AURUM to turn every journey into a
+					special experience
+				</div>
+
+				<div class="offer-cta-container">
+					<button class="button-styling top-cta" onclick="window.location.href = '#form';">
+						Get your complimentary membership
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="row offers-instore">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					What's in store for members
+				</h2>
+			</div>
+
+			<div class="col-12 desc-left">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-description-container">
+							<div class="offer-description left">
+								<h4>One Class-Upgrade Vouchers</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-image-container">
+							<div class="offer-image right">
+								<img src="{{site.img_path}}/icons/first-class.png" class="firstclass-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 mtop-60 desc-right">
+				<div class="row">
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="offer-image-container">
+							<div class="offer-image left">
+								<img src="{{site.img_path}}/icons/points-to-cash.png" class="points-to-cash-image">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<div class="offer-description-container">
+							<div class="offer-description right">
+								<h4>9 Club Vistara Points per INR 100 Spent</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- <section class="row become-member success-notification"> -->
+		<section class="row become-member" id="form">
+
+			<!-- <div class="success-notification-overlay">
+				<h2 class="section-header-style">
+					You did it!
+				</h2>
+				<div class="success-image">
+					<img src="{{site.img_path}}/homedelivery.svg">
+				</div>
+				<div class="success-text">
+					You have successfully applied for complimentary Club Vistara membership.
+					<br>
+					Your service request number is <span class="emph">10292837271</span>.
+					<br>
+					Check back soon to avail a host of exciting offers.
+				</div>
+			</div> -->
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Become a member to experience Club Vistara Silver benefits
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+
+				<form class="membership-form vistara">
+
+					<div class="form-element title">
+						<label class="label-style">
+							Title
+						</label>
+						<div class="input-container">
+							<select id="title-selectmenu" class="my-selectmenu">
+								<option value="Ms." selected>Ms.</option>
+								<option value="Mr.">Mr.</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-element fname">
+						<label class="label-style">
+							First Name
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="Subahlakshmi">
+						</div>
+					</div>
+
+					<div class="form-element lname">
+						<label class="label-style">
+							Last Name
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="Chandra">
+						</div>
+					</div>
+
+					<div class="form-element existing-member">
+						<label class="label-style">
+							Existing CV member?
+						</label>
+						<div class="input-container">
+							<div class="radiobutton-container hide-on-mobile">
+								<input type="radio" class="input-style" name="existing-cv-member"
+									id="existing-cv-member-yes">
+								<label for="existing-cv-member-yes">
+									<div class="radio-replica">
+										<div class="inside"></div>
+									</div>
+									<span>Yes</span>
+								</label>
+							</div>
+							<div class="radiobutton-container hide-on-mobile">
+								<input type="radio" class="input-style" name="existing-cv-member"
+									id="existing-cv-member-no" checked>
+								<label for="existing-cv-member-no">
+									<div class="radio-replica">
+										<div class="inside"></div>
+									</div>
+									<span>No</span>
+								</label>
+							</div>
+							<div class="existing-selectmenu-container">
+								<select id="existing-selectmenu" class="my-selectmenu">
+									<option value="No">No</option>
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element mobile">
+						<label class="label-style">
+							Mobile Number
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="9876543210">
+						</div>
+					</div>
+
+					<div class="form-element email">
+						<label class="label-style">
+							Email
+						</label>
+						<div class="input-container">
+							<input type="text" class="input-style" value="subahlakshmi@gmail.com">
+						</div>
+					</div>
+
+					<div class="form-element half-half">
+						<div class="left-half">
+							<div class="form-element">
+								<label class="label-style">
+									City
+								</label>
+								<div class="input-container">
+									<input type="text" class="input-style" value="New Delhi">
+								</div>
+							</div>
+						</div>
+						<div class="right-half">
+							<div class="form-element">
+								<label class="label-style">
+									State
+								</label>
+								<div class="input-container">
+									<select id="state-selectmenu" class="my-selectmenu">
+										<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+										<option value="Andhra Pradesh">Andhra Pradesh</option>
+										<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+										<option value="Assam">Assam</option>
+										<option value="Bihar">Bihar</option>
+										<option value="Chandigarh">Chandigarh</option>
+										<option value="Chhattisgarh">Chhattisgarh</option>
+										<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+										<option value="Daman and Diu">Daman and Diu</option>
+										<option value="Delhi" selected>Delhi</option>
+										<option value="Goa">Goa</option>
+										<option value="Gujarat">Gujarat</option>
+										<option value="Haryana">Haryana</option>
+										<option value="Himachal Pradesh">Himachal Pradesh</option>
+										<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+										<option value="Jharkhand">Jharkhand</option>
+										<option value="Karnataka">Karnataka</option>
+										<option value="Kerala">Kerala</option>
+										<option value="Lakshadweep">Lakshadweep</option>
+										<option value="Madhya Pradesh">Madhya Pradesh</option>
+										<option value="Maharashtra">Maharashtra</option>
+										<option value="Manipur">Manipur</option>
+										<option value="Meghalaya">Meghalaya</option>
+										<option value="Mizoram">Mizoram</option>
+										<option value="Nagaland">Nagaland</option>
+										<option value="Orissa">Orissa</option>
+										<option value="Pondicherry">Pondicherry</option>
+										<option value="Punjab">Punjab</option>
+										<option value="Rajasthan">Rajasthan</option>
+										<option value="Sikkim">Sikkim</option>
+										<option value="Tamil Nadu">Tamil Nadu</option>
+										<option value="Tripura">Tripura</option>
+										<option value="Uttaranchal">Uttaranchal</option>
+										<option value="Uttar Pradesh">Uttar Pradesh</option>
+										<option value="West Bengal">West Bengal</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element half-half">
+						<div class="checkbox-container">
+							<div class="checkbox">
+								<input type="checkbox" id="checkbox-tncs">
+								<label for="checkbox-tncs">
+									<img src="{{site.img_path}}/checkbox-tick.svg" alt="">
+								</label>
+							</div>
+							<span>
+								I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">terms and
+									conditions</a> of Club Vistara.
+							</span>
+						</div>
+					</div>
+				</form>
+
+				<div class="button-container">
+					<button class="button-styling">
+						Get your complimentary membership
+					</button>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="row cities-available">
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Cities available in
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="text">
+					Across all cities from where Vistara functions
+				</div>
+			</div>
+		</section>
+
+		<section class="row offer-support">
+			<div class="col px-0">
+				<div class="support-container">
+					<img src="{{site.img_path}}/handshake-icon.svg">
+					<span>
+						For any support on the membership and benefits under it, contact <a href="tel:+919289228888">+91
+							928 922 8888</a>.
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="row tncs">
+
+			<div class="col-12 px-0">
+				<h2 class="section-header section-header-style">
+					Terms and Conditions
+				</h2>
+			</div>
+
+			<div class="col-12 px-0">
+				<div class="tnc-list">
+					<ul>
+						<li>AURUM Cardholder(s) can request for Club Vistara (CV) Silver Membership through <a
+								href="https://aurumcreditcard.com">aurumcreditcard.com</a> or
+							customer helpline numbers: 39020202 (Prefix Local STD code) or 1860 5002000. The benefits
+							under this
+							program for new or for existing CV member can be availed only after registration through the
+							Card.</li>
+						<li>Only Primary cardholders of AURUM are eligible for CV Silver Membership</li>
+						<li>Cardholder will receive CV membership ID within 10 days from the date of request of
+							membership.</li>
+						<li>Cardholder can avail CV Silver Membership only once</li>
+						<li>Cardholder should apply for CV Silver Membership within a year from the date of AURUM
+							issuance</li>
+						<li>If the cardholder is not a CV member, he/she will be allotted a new CV ID with CV Silver
+							membership</li>
+						<li>If the cardholder is an existing CV Base member, he/she will be upgraded to the CV Silver
+							with the
+							same CV ID</li>
+						<li>If the cardholder holds an existing CV Silver Membership, his/her CV Silver Membership will
+							be
+							extended for 365 days from the date of request with the same CV ID</li>
+
+						<div class="initially-hide">
+							<li>If the cardholder holds an existing CV Gold/Platinum Membership, no change will be made
+								in the
+								cardholder’s existing CV membership and privileges of the lower tier cannot be availed
+							</li>
+							<li>CV Silver Membership is not available to the delinquent/blocked and any other ineligible
+								Cardholders
+								determined as per the internal policy of SBI Card. Accordingly, granting of CV Silver
+								Membership is at the
+								sole and absolute discretion of SBI Card</li>
+							<li>The terms and conditions governing eligibility of CV Silver Membership for SBI
+								Cardholders may be
+								altered, amended, changed or withdrawn at any time and without any notice by SBI Card at
+								its sole option
+								and discretion</li>
+							<li>CV Points are valid for a period of 36 months from the date of flight</li>
+							<li>The CV Silver is valid for one Annual Cycle (Annual cycle is the period from one day
+								after the date on
+								which a member has achieved a specified tier and continues for 365 days)</li>
+							<li>The Cardholder must accumulate 15,000 qualifying tier points or undertake 20 flights to
+								retain his/her
+								CV Silver status by the end of Annual Cycle, otherwise, he/she will automatically revert
+								to CV Base. This
+								is as per the standard terms and conditions of Club Vistara program which may be amended
+								by Vistara
+								without any prior notice.</li>
+							<li>Cardholders shall continue to enjoy CV Base privileges for lifetime as CV Base
+								membership does not
+								have an expiry</li>
+							<li>To accumulate CV Points, the member must quote his/her CV ID at the time of making a
+								booking
+								and/or at the time of check-in</li>
+							<li>CV Points are only credited to member’s CV account once the travel is completed. In case
+								of a “No
+								Show” or cancellation, cardholders will not receive any CV Points</li>
+							<li>CV Points cannot be transferred between CV accounts or any other frequent flyer
+								programme</li>
+							<li>Redemption of Award flight is subject to seat availability at the time of booking</li>
+							<li>Cardholders can redeem CV Points for Vistara Award flight/Upgrade Award upon
+								accumulating a
+								minimum of 500 CV Points in their CV account</li>
+							<li>A Cardholder can hold only one CV account with a unique email id. In the event that more
+								than one
+								account number is assigned to the same individual (duplicate accounts), CV reserves the
+								right to merge
+								the accounts to the primary account</li>
+							<li>CV member will be responsible to maintain the confidentiality of his/her own CV account
+							</li>
+							<li>Membership to CV is offered at the discretion of Vistara and may be refused to any
+								applicant</li>
+							<li>The cardholder confirms SBI Card to sharing pertinent cardholder information with
+								Vistara for the
+								purpose of granting CV Membership</li>
+							<li>Use of CV Membership constitutes acceptance of the terms and conditions specified by
+								Vistara. All
+								interpretations of the Terms and Conditions and Program rules shall be at the sole
+								discretion of Vistara</li>
+							<li>To check the latest update on benefits of CV Silver Membership and T&Cs’, visit
+								www.clubvistara.com and www.airvistara.com/trip/Club-Vistara-Terms-and-Conditions
+								respectively</li>
+							<li>For other membership related queries, customers can email at
+								custrelations@airvistara.com or call at
+								+91- 928 922 8888 or +91-120 669 9901</li>
+							<li>Sbi Card reserves the right to change / modify / add / delete any of the terms &
+								conditions of the offer
+								at any time without notice</li>
+							<li>SBI Card shall not be liable if any partner has temporarily or permanently shut down its
+								operations.</li>
+						</div>
+					</ul>
+
+					<div class="read-more-overlay">
+						<span class="read-more">Read more</span>
+						<span class="read-less">Read less</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include imports/jquery.html %}
+	{% include imports/bootstrap_js.html %}
+	{% include imports/jqueryui_js.html %}
+	{% include imports/custom_js.html %}
+	<script src="assets/js/vistara_premembership.js"></script>
+</body>
+
+</html>
