@@ -163,3 +163,17 @@ function checkRequiredFields (){
 	const combinedCheck = check1 && check2;
 	proceedButton.disabled = !combinedCheck
 }
+
+var validateOtp = (el)=>{
+	console.log(el);
+	if(el.value.length <6) return
+
+	if(el.value === '000000'){
+		document.querySelector('.sp-split-input-block').classList.remove('is-invalid')
+		setTimeout(()=>{
+			window.location.hash = 'thankYou'
+		},1000)
+	}else{
+		document.querySelector('.sp-split-input-block').classList.add('is-invalid')
+	}
+}

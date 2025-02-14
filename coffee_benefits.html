@@ -107,8 +107,8 @@ active_card: coffee-on-the-go
 						  </label>
 					  </div>
 					  <span>
-						  I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">terms and
-							  conditions</a>
+						  I Agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">Terms and
+							  Conditions</a>
 					  </span>
 					</div>
 				</div>
@@ -117,7 +117,7 @@ active_card: coffee-on-the-go
           id="coffee-proceed-btn" 
           class="button-styling" 
           disabled
-          onclick="window.location.hash = 'otp'"
+          onclick="window.location.hash = 'generateOtp'"
 
           >Proceed</button>
 				</div>
@@ -295,45 +295,45 @@ active_card: coffee-on-the-go
       {% include footer.html %}
     </div>
 
-    <div id="redirect" class="sp-modal in" role="dialog">
+<div id="generateOtp" class="sp-modal in" role="dialog">
+  <div class="sp-modal-body text-center">
+    <h2 class="sp-modal-heading sp-text-white">One Time Verification</h2>
+    <p class="sp-modal-content text-white">Verify by entering the 6-digit OTP sent on your mobile number
+
+      <br>
+      <span class="sp-text-gold">+91 xxxxxx5010</span>
+    </p>
+    <div class="otp-modal-content">
+      <div class="sp-split-input-block">
+        <label for="sp-terms" class="sp-input-label sp-split-input" id="otp-input">
+          <input type="text" name="" id="" maxlength="6" onkeyup="validateOtp(this)" style="color: #fff;"
+            onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+          <svg height="2px" width="100%">
+            <line x1="0" y1="0" x2="200" y2="0" stroke="currentColor" style="stroke-width:2;stroke-dasharray:18px"></line>
+          </svg>
+        </label>
+        <p class="sp-input-help-text sp-input-help-text-error">The OTP you have entered is incorrect</p>
+      </div>
+      <a class="underlined space-top-40 sp-text-gold sp-hover-no-underline sp-text-14" href="#">Resend Code</a>
+      <a href="#" class="underlined sp-text-gold sp-text-14 sp-hover-no-underline space-top-40">Cancel</a>
+    </div>
+  </div>
+</div>
+    <div id="thankYou" class="sp-modal in" role="dialog">
       <div class="sp-modal-body text-center noPadding">
         <div class="sp-modal-padding-wrapper">
           <h2 class="sp-modal-heading subheading">
-            <!-- <a class="modal-back">
-						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
-							<path fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round"
-								stroke-linejoin="round" stroke-width="2.7" d="M0.857 0L8.479 8 0.857 16"
-								transform="matrix(-1 0 0 1 10 2)" />
-						</svg>
-
-					</a> -->
-            Disclaimer
+            Thank you!
           </h2>
-          <div class="sp-modal-content scrollable">
+          <div class="sp-modal-content">
             <p class="sbi-subtext black">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <br />
-              <br />
-
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              We have recorded your interest in AURUM credit card and will get back to you soon.
             </p>
           </div>
           <div class="modal-buttons">
             <!-- <a href="#knowMore" class="underlined">Know more</a> -->
-            <button class="button button-styling" onclick="window.location.hash = ''" id="onboarded-button">Proceed</button>
-            <a href="#" class="underlined">Cancel</a>
+            <a href="#" class="underlined sp-text-gold  sp-hover-no-underline space-top-40 ">Go to the home page</a>
+            <a href="#" class="underlined sp-text-gold  sp-hover-no-underline space-top-40 ">Close</a>
           </div>
         </div>
       </div>

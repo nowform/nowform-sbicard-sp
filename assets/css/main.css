@@ -2808,3 +2808,10 @@ h2.section-header-style-inline {
 section.membership-cards.airport-experience-cards{
 	height: auto;
 }
+.otp-modal-content{
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	display: flex
+}
