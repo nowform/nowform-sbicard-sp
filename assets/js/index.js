@@ -32,39 +32,39 @@ var handle_membership_cards = function () {
 	// });
 };
 
-var handle_airport_experience_cards = function () {
-	let $membershipCardsDiv = $("section#airport-experience-cards"),
-		$membershipNavButton = $("#airport-experience-nav-button"),
-		$window = $(window);
+// var handle_airport_experience_cards = function () {
+// 	let $membershipCardsDiv = $("section#airport-experience-cards"),
+// 		$membershipNavButton = $("#airport-experience-nav-button"),
+// 		$window = $(window);
 
-	// if the current page is a membership page
-	// no need of the sliding/unsliding
-	if ($membershipNavButton.hasClass('active')) {
-		return;
-	}
+// 	// if the current page is a membership page
+// 	// no need of the sliding/unsliding
+// 	if ($membershipNavButton.hasClass('active')) {
+// 		return;
+// 	}
 
-	// show when the button on the navbar is mouseentered
-	// $membershipNavButton.on("mouseenter", function () {
-	// 	if ($window.scrollTop() > 0) {
-	// 		return;
-	// 	}
-	// 	$membershipCardsDiv.slideToggle(200, 'linear');
-	// });
+// 	// show when the button on the navbar is mouseentered
+// 	// $membershipNavButton.on("mouseenter", function () {
+// 	// 	if ($window.scrollTop() > 0) {
+// 	// 		return;
+// 	// 	}
+// 	// 	$membershipCardsDiv.slideToggle(200, 'linear');
+// 	// });
 
-	// // hide when the button on the navbar is mouseleave-d from anywhere but the botton 
-	// $membershipNavButton.on("mouseleave", function (e) {
-	// 	var $this = $(this);
-	// 	var bottom = $this.offset().top + $this.outerHeight();
-	// 	if (e.pageY < bottom) {
-	// 		$membershipCardsDiv.slideToggle(200, 'linear');
-	// 	}
-	// });
+// 	// // hide when the button on the navbar is mouseleave-d from anywhere but the botton 
+// 	// $membershipNavButton.on("mouseleave", function (e) {
+// 	// 	var $this = $(this);
+// 	// 	var bottom = $this.offset().top + $this.outerHeight();
+// 	// 	if (e.pageY < bottom) {
+// 	// 		$membershipCardsDiv.slideToggle(200, 'linear');
+// 	// 	}
+// 	// });
 
-	// hide when the cards div itself is mouseleave-d
-	// $membershipCardsDiv.on("mouseleave", function () {
-	// 	$(this).slideToggle(200, 'linear');
-	// });
-};
+// 	// hide when the cards div itself is mouseleave-d
+// 	// $membershipCardsDiv.on("mouseleave", function () {
+// 	// 	$(this).slideToggle(200, 'linear');
+// 	// });
+// };
 
 $(document).ready(function () {
 
@@ -134,4 +134,32 @@ $(document).ready(function () {
 });
 var scrollToTop = function () {
 	$('html,body').animate({ scrollTop: 0 }, 'slow');
+}
+
+
+// new js
+
+$(document).ready(function () {
+	
+	let isFormValid = false
+	
+	const coffeeRadios  = $('[name="transaction-claim"]');
+	const coffeeTerms  = $('#checkbox-tncs');
+
+	coffeeRadios.change(()=>{
+		checkRequiredFields()
+	})
+	coffeeTerms.change(()=>{
+		checkRequiredFields()
+	})
+	
+})
+
+function checkRequiredFields (){
+	const proceedButton = document.querySelector('#coffee-proceed-btn')
+	const check1 = document.querySelector('#checkbox-tncs').checked;
+	const check2 = document.querySelector('[name="transaction-claim"]:checked') !== null
+
+	const combinedCheck = check1 && check2;
+	proceedButton.disabled = !combinedCheck
 }

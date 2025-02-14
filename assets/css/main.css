@@ -2749,9 +2749,15 @@ margin-top: 6px;
 	flex-direction: column;
 }
 
-.transaction-claim-form .radiobutton-container:not(:last-child){
+.transaction-claim-form .form-element .radiobutton-container:not(:last-child){
 	margin-bottom: 30px;
+}
+
+.transaction-claim-form .form-element .radiobutton-container{
 	margin-right: 0;
+}
+.transaction-claim-form .button-styling{
+	min-width: 200px;
 }
 
 .transaction-claim-form .form-element  .radiobutton-container  input[type=radio] + label{

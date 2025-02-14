@@ -300,55 +300,55 @@
         </div>
 
         <div class="col-12 col-md-6 offset-md-3 off transaction-claim-form">
-			<div class="form-element ">
-				<div class="input-container ">
-				  <div class="radiobutton-container hide-on-mobile">
-					<input type="radio" class="input-style" name="transaction-claim" id="starbucks"/>
-					<label for="starbucks">
-					  <div class="radio-replica">
-						<div class="inside"></div>
-					  </div>
-					  <div class="name_date">
-						  <span>Starbucks</span>
-						  <span>06 Jan 2025</span>
-					  </div>
-					  <span class="rate">
-						₹900.00
-					  </span>
-					</label>
-				  </div>
-				  <div class="radiobutton-container hide-on-mobile">
-					<input type="radio" class="input-style" name="transaction-claim" id="airport-coffee-shop"/>
-					<label for="airport-coffee-shop">
-					  <div class="radio-replica">
-						<div class="inside"></div>
-					  </div>
-					  <div class="name_date">
-						<span>Starbucks</span>
-						<span>03 Jan 2025</span>
-					</div>
-					<span class="rate">
-					  ₹800.00
-					</span>
-					</label>
-				  </div>
-				  <div class="radiobutton-container hide-on-mobile">
-					<input type="radio" class="input-style" name="transaction-claim" id="airport-shop"/>
-					<label for="airport-shop">
-					  <div class="radio-replica">
-						<div class="inside"></div>
-					  </div>
-					  <div class="name_date">
-						<span>Starbucks</span>
-						<span>02 Jan 2025</span>
-					</div>
-					<span class="rate">
-					  ₹800.00
-					</span>
-					</label>
-				  </div>
-				</div>
-			</div>
+        <div class="form-element ">
+          <div class="input-container">
+            <div class="radiobutton-container hide-on-mobile">
+            <input type="radio" class="input-style" name="transaction-claim" id="starbucks"/>
+            <label for="starbucks">
+              <div class="radio-replica">
+              <div class="inside"></div>
+              </div>
+              <div class="name_date">
+                <span>Starbucks</span>
+                <span>06 Jan 2025</span>
+              </div>
+              <span class="rate">
+              ₹900.00
+              </span>
+            </label>
+            </div>
+            <div class="radiobutton-container hide-on-mobile">
+            <input type="radio" class="input-style" name="transaction-claim" id="airport-coffee-shop"/>
+            <label for="airport-coffee-shop">
+              <div class="radio-replica">
+              <div class="inside"></div>
+              </div>
+              <div class="name_date">
+              <span>Starbucks</span>
+              <span>03 Jan 2025</span>
+            </div>
+            <span class="rate">
+              ₹800.00
+            </span>
+            </label>
+            </div>
+            <div class="radiobutton-container hide-on-mobile">
+            <input type="radio" class="input-style" name="transaction-claim" id="airport-shop"/>
+            <label for="airport-shop">
+              <div class="radio-replica">
+              <div class="inside"></div>
+              </div>
+              <div class="name_date">
+              <span>Starbucks</span>
+              <span>02 Jan 2025</span>
+            </div>
+            <span class="rate">
+              ₹800.00
+            </span>
+            </label>
+            </div>
+          </div>
+        </div>
 			
 
 			<div class="form-submission-block">
@@ -369,7 +369,13 @@
 					</div>
 				</div>
 				<div class="button-container">
-				  <button class="button-styling" onclick="window.location.hash = 'redirect'">Proceed</button>
+				  <button 
+          id="coffee-proceed-btn" 
+          class="button-styling" 
+          disabled
+          onclick="window.location.hash = 'otp'"
+
+          >Proceed</button>
 				</div>
 			</div>
       </section>

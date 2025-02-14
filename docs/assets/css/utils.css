@@ -339,3 +339,11 @@ img#external-icon {
 		font-size: 12px;
 	}
 }
+
+/* new css */
+
+button.button-styling:disabled {
+	color: #000000;
+	background-color: #999999;
+	cursor: not-allowed;
+}
