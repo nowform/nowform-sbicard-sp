@@ -296,22 +296,24 @@ active_card: coffee-on-the-go
     </div>
 
 <div id="generateOtp" class="sp-modal in" role="dialog">
-  <div class="sp-modal-body text-center">
-    <h2 class="sp-modal-heading sp-text-gold mt-0">One Time Verification</h2>
+  <div class="sp-modal-body text-center ">
+    <h2 class="sp-modal-heading sp-text-gold otp-modal-heading">One Time Verification</h2>
     <p class="sp-modal-content text-white">Verify by entering the 6-digit OTP sent on your mobile number
 
       <br>
       <span class="sp-text-gold">+91 xxxxxx5010</span>
     </p>
     <div class="otp-modal-content">
-      <div class="sp-split-input-block">
-        <label for="sp-terms" class="sp-input-label sp-split-input" id="otp-input">
-          <input type="text" name="" id="" maxlength="6" onkeyup="validateOtp(this)" style="color: #fff;"
-            onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
-          <svg height="2px" width="100%">
-            <line x1="0" y1="0" x2="200" y2="0" stroke="currentColor" style="stroke-width:2;stroke-dasharray:18px"></line>
-          </svg>
-        </label>
+      <div class="otp-input-block">
+        <div class="sp-split-input-block">
+          <label for="sp-terms" class="sp-input-label sp-split-input" id="otp-input">
+            <input type="text" name="" id="" maxlength="6" onkeyup="validateOtp(this)" style="color: #fff;"
+              onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+            <svg height="2px" width="100%">
+              <line x1="0" y1="0" x2="200" y2="0" stroke="currentColor" style="stroke-width:2;stroke-dasharray:18px"></line>
+            </svg>
+          </label>
+        </div>
         <p class="sp-input-help-text sp-input-help-text-error">The OTP you have entered is incorrect</p>
       </div>
       <a class="underlined space-top-40 sp-text-gold sp-hover-no-underline sp-text-14" href="#">Resend Code</a>
