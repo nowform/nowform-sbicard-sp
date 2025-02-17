@@ -2766,13 +2766,15 @@ margin-top: 6px;
 	align-items: center;
 	font-weight: 400;
 }
-.transaction-claim-form .radiobutton-container label .name_date{
+.transaction-claim-form .radiobutton-container label .txn-name-date{
 	display: inline-flex;
+	font-size: 16px;
 	flex-direction: column;
 	align-items: flex-start;
 }
-.transaction-claim-form .radiobutton-container label .rate{
+.transaction-claim-form .radiobutton-container label .txn-rate{
 	margin-left: auto;
+	font-size: 16px ;
 }
 .transaction-claim-form .form-submission-block{
 	margin-top: 40px;
@@ -2790,6 +2792,13 @@ margin-top: 6px;
 	font-size: 12px;
 	font-weight: normal;
 	color: #ffffff;	
+}
+.txn-name-date .txn-date{
+	font-size: 10px ;
+}
+
+.txn-name-date .txn-name{
+	font-size: 16px ;
 }
 
 h2.section-header-style-inline {
