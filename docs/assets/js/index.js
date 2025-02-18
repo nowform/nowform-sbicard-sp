@@ -184,7 +184,11 @@ var validateOtp = (el)=>{
 		console.log(wrongOTPCount);
 		document.querySelector('#attempt-count').innerText = wrongOTPCount;
 		if(wrongOTPCount >=3){
-			document.querySelector('#otp-error-message').innerText = 'Too many unsuccessful attempts have been made. Please try again after some time'
+
+			document.querySelector('#resend-otp-button').disabled = true
+			setTimeout(()=>{
+				window.location.hash= 'notverified'
+			},500)
 		}
 		document.querySelector('.sp-split-input-block').classList.add('is-invalid')
 	}

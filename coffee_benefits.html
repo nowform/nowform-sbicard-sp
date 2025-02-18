@@ -322,7 +322,7 @@ active_card: coffee-on-the-go
           <span id="attempt-count">1</span> of <span>3</span> failed verification attempts
         </p>
       </div>
-      <button class="underlined space-top-40 space-bottom-20 sp-text-gold sp-hover-no-underline sp-text-14 sp-button-link" onclick="resendCode()">Resend Code</button>
+      <button class="underlined space-top-40 space-bottom-20 sp-text-gold sp-hover-no-underline sp-text-14 sp-button-link" id="resend-otp-button" onclick="resendCode()">Resend Code</button>
       <p class="sp-help-text" id="resend-code-help-text">OTP has been resent</p>
       <a href="#" class="underlined sp-text-gold sp-text-14 sp-hover-no-underline space-top-20">Cancel</a>
     </div>
@@ -372,6 +372,29 @@ active_card: coffee-on-the-go
               <!--<br/>
               <br/>
               You SR number is 82193897143-->
+            </p>
+          </div>
+          <div class="modal-buttons">
+            <!-- <a href="#knowMore" class="underlined">Know more</a> -->
+            <a href="dashboard/account_dashboard.html" class="underlined sp-text-gold  sp-hover-no-underline ">Go to the home page</a>
+            <a href="#" class="underlined sp-text-gold  sp-hover-no-underline space-top-40 ">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="notverified" class="sp-modal in" role="dialog">
+      <div class="sp-modal-body text-center noPadding">
+        <div class="sp-modal-padding-wrapper">
+          <h2 class="sp-modal-heading sp-text-gold mt-0">
+            Currently Unable to Verify
+          </h2>
+          <div class="sp-modal-content">
+            <p class="sbi-subtext black">
+
+              Too many unsuccessful attempts have been made. Please try again after some time
+              <br>
+              <br>
+              If you are having trouble verifying <a href="#" class="underlined sp-text-gold  sp-hover-no-underline">Click here</a> to contact us.
             </p>
           </div>
           <div class="modal-buttons">

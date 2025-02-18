@@ -393,6 +393,9 @@ button.button-styling:disabled {
 }
 .sp-button-link:disabled{
 	cursor: not-allowed;
+	color: #999999;
+	text-decoration: none;
+	cursor: not-allowed;
 }
 
 .sp-help-text,
