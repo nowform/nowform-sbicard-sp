@@ -182,10 +182,14 @@ var validateOtp = (el)=>{
 	}else{
 		wrongOTPCount +=1;
 		console.log(wrongOTPCount);
-		
+		document.querySelector('#attempt-count').innerText = wrongOTPCount;
 		if(wrongOTPCount >=3){
-			document.querySelector('#otp-error-message').innerText = 'OTP Limit Exceeded'
+			document.querySelector('#otp-error-message').innerText = 'Too many unsuccessful attempts have been made. Please try again after some time'
 		}
 		document.querySelector('.sp-split-input-block').classList.add('is-invalid')
 	}
+}
+
+function resendCode(){
+	document.querySelector('#resend-code-help-text').classList.add('sp-help-text-visible')
 }

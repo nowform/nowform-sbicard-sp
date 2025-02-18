@@ -351,6 +351,9 @@ button.button-styling:disabled {
 .sp-text-gold{
 	color: #c2a63f;
 }
+.sp-text-grey{
+	color: #999999;
+}
 .sp-modal .sp-modal-body .sp-modal-heading.sp-text-white,
 .sp-text-white{
 	color: white;
@@ -382,14 +385,31 @@ button.button-styling:disabled {
 .sp-input-help-text{
 	font-size: 14px;
 }
+.sp-button-link,.sp-button-link:focus{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.sp-button-link:disabled{
+	cursor: not-allowed;
+}
 
+.sp-help-text,
+.sp-help-text-error,
 .sp-input-help-text.sp-input-help-text-error{
-	color: red;
 	margin-bottom: 0;
 	font: 400 14px "Open Sans", sans-serif;
 	display: none;
 }
-
+.sp-help-text-error,
+.sp-input-help-text.sp-input-help-text-error{
+	color: red;
+}
+.sp-help-text.sp-help-text-visible,
+.sp-help-text-error.sp-help-text-visible{
+	display: block;
+}
 .sp-split-input input {
 	background-color: transparent;
     border: none;
@@ -399,7 +419,7 @@ button.button-styling:disabled {
     letter-spacing: 25.5px;
     width: 220px;
     margin-left: 20px;
-    padding-left: 3px;
+    padding-left: 4px;
     outline: none;
 }
 .sp-split-input input + svg {
@@ -411,6 +431,12 @@ button.button-styling:disabled {
 
 .space-top-40 {
     margin-top: 40px;
+}
+.space-top-20{
+	margin-top: 20px;
+}
+.space-bottom-20{
+	margin-bottom: 20px;
 }
 .sp-text-14{
 	font-size: 14px;

@@ -31,7 +31,7 @@ active_card: coffee-on-the-go
 			<div class="offer-logo">
 				<img src="{{site.img_path}}/aurum-logo.svg" alt="Zomato Gold offer by AURUM" class="aurum-logo">
 				<span class="divider"></span>
-				<h2 class="section-header-style-inline">Coffee on the go</h2>
+				<h2 class="section-header-style-inline">Coffee on the Go</h2>
 			</div>
 
           <div class="offer-tagline" style="margin-bottom: 40px">Avail Cashback on Coffee transaction at Domestic Airport</div>
@@ -46,7 +46,7 @@ active_card: coffee-on-the-go
         <div class="col-12 col-md-6 offset-md-3 off transaction-claim-form">
           <div class="form-table-header">
             <span>Transaction Details</span>
-            <span>Transaction Amount</span>
+            <span>Amount</span>
           </div> 
         <div class="form-element ">
           <div class="input-container">
@@ -111,7 +111,7 @@ active_card: coffee-on-the-go
 						  </label>
 					  </div>
 					  <span>
-						  I Agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">Terms and
+						  I agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">Terms and
 							  Conditions</a>
 					  </span>
 					</div>
@@ -318,13 +318,47 @@ active_card: coffee-on-the-go
             </svg>
           </label>
         </div>
-        <p class="sp-input-help-text sp-input-help-text-error" id="otp-error-message">The OTP you have entered is incorrect</p>
+        <p class="sp-input-help-text sp-input-help-text-error" id="otp-error-message">
+          <span id="attempt-count">1</span> of <span>3</span> failed verification attempts
+        </p>
       </div>
-      <a class="underlined space-top-40 sp-text-gold sp-hover-no-underline sp-text-14" href="#">Resend Code</a>
-      <a href="#" class="underlined sp-text-gold sp-text-14 sp-hover-no-underline space-top-40">Cancel</a>
+      <button class="underlined space-top-40 space-bottom-20 sp-text-gold sp-hover-no-underline sp-text-14 sp-button-link" onclick="resendCode()">Resend Code</button>
+      <p class="sp-help-text" id="resend-code-help-text">OTP has been resent</p>
+      <a href="#" class="underlined sp-text-gold sp-text-14 sp-hover-no-underline space-top-20">Cancel</a>
     </div>
   </div>
 </div>
+<div id="resendError" class="sp-modal in" role="dialog">
+  <div class="sp-modal-body text-center ">
+    <h2 class="sp-modal-heading sp-text-gold otp-modal-heading">One Time Verification</h2>
+    <p class="sp-modal-content text-white">Verify by entering the 6-digit OTP sent on your mobile number
+
+      <br>
+      <span class="sp-text-gold">+91 xxxxxx5010</span>
+    </p>
+    <div class="otp-modal-content">
+      <div class="otp-input-block">
+        <div class="sp-split-input-block">
+          <label for="sp-terms" class="sp-input-label sp-split-input" id="otp-input">
+            <input type="text" name="" id="" maxlength="6" onkeyup="validateOtp(this)" style="color: #fff;"
+              onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+            <svg height="2px" width="100%">
+              <line x1="0" y1="0" x2="200" y2="0" stroke="currentColor" style="stroke-width:2;stroke-dasharray:18px"></line>
+            </svg>
+          </label>
+        </div>
+        <p class="sp-input-help-text sp-input-help-text-error" id="otp-error-message">
+          <span id="attempt-count">1</span> of <span>3</span> failed verification attempts
+        </p>
+      </div>
+      <button class=" space-top-40  space-bottom-20 sp-text-grey sp-text-grey sp-text-14 sp-button-link" disabled href="#">Resend Code</button>
+      <p class="sp-help-text" >OTP has been resent</p>
+      <p class="sp-help-text-error sp-help-text-visible" >you have exhasted the number of times you can ask for the one time password to be resent</p>
+      <a href="#" class="underlined sp-text-gold sp-text-14  space-top-20 sp-hover-no-underline space-top-40">Cancel</a>
+    </div>
+  </div>
+</div>
+
     <div id="thankYou" class="sp-modal in" role="dialog">
       <div class="sp-modal-body text-center noPadding">
         <div class="sp-modal-padding-wrapper">
@@ -335,6 +369,29 @@ active_card: coffee-on-the-go
             <p class="sbi-subtext black">
 
               You have successfully claimed your Coffee on the Go Privileges.
+              <!--<br/>
+              <br/>
+              You SR number is 82193897143-->
+            </p>
+          </div>
+          <div class="modal-buttons">
+            <!-- <a href="#knowMore" class="underlined">Know more</a> -->
+            <a href="dashboard/account_dashboard.html" class="underlined sp-text-gold  sp-hover-no-underline ">Go to the home page</a>
+            <a href="#" class="underlined sp-text-gold  sp-hover-no-underline space-top-40 ">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="serviceError" class="sp-modal in" role="dialog">
+      <div class="sp-modal-body text-center noPadding">
+        <div class="sp-modal-padding-wrapper">
+          <h2 class="sp-modal-heading sp-text-gold mt-0">
+            Congratulations! 
+          </h2>
+          <div class="sp-modal-content">
+            <p class="sbi-subtext black">
+
+              Currently Unable to Verify
               <!--<br/>
               <br/>
               You SR number is 82193897143-->

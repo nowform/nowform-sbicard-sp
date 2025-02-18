@@ -15,6 +15,7 @@ section.membership-cards.memberships-page {
 	section.membership-cards div.cards-container {
 		padding-top: 20px;
 		color: #fff;
+		padding-bottom: 20px;
 		padding-left: 12.6%;
 		display: -webkit-box;
 		display: -ms-flexbox;
