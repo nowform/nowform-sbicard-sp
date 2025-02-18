@@ -174,7 +174,12 @@ var validateOtp = (el)=>{
 
 	lastOtp = el.value
 
-	if(el.value === '000000'){
+	if(el.value === '111111'){
+		setTimeout(()=>{
+			window.location.hash = 'serviceError'
+		},1000)
+	}
+	else if(el.value === '000000'){
 		document.querySelector('.sp-split-input-block').classList.remove('is-invalid')
 		setTimeout(()=>{
 			window.location.hash = 'thankYou'
