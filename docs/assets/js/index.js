@@ -164,9 +164,15 @@ function checkRequiredFields (){
 	proceedButton.disabled = !combinedCheck
 }
 
+var wrongOTPCount = 0
+var lastOtp = null;
 var validateOtp = (el)=>{
 	console.log(el);
 	if(el.value.length <6) return
+
+	if(lastOtp === el.value) return 
+
+	lastOtp = el.value
 
 	if(el.value === '000000'){
 		document.querySelector('.sp-split-input-block').classList.remove('is-invalid')
@@ -174,6 +180,12 @@ var validateOtp = (el)=>{
 			window.location.hash = 'thankYou'
 		},1000)
 	}else{
+		wrongOTPCount +=1;
+		console.log(wrongOTPCount);
+		
+		if(wrongOTPCount >=3){
+			document.querySelector('#otp-error-message').innerText = 'OTP Limit Exceeded'
+		}
 		document.querySelector('.sp-split-input-block').classList.add('is-invalid')
 	}
 }

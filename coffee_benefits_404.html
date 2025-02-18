@@ -40,92 +40,15 @@ active_card: coffee-on-the-go
 
       <section class="row offers-instore airport">
         <div class="col-12 px-0">
-          <h2 class="section-header section-header-style">Select Transactions to Claim</h2>
+          <h2 class="section-header section-header-style">Oh no! You have no transactions to claim right now.</h2>
         </div>
 
-        <div class="col-12 col-md-6 offset-md-3 off transaction-claim-form">
-          <div class="form-table-header">
-            <span>Transaction Details</span>
-            <span>Transaction Amount</span>
-          </div> 
-        <div class="form-element ">
-          <div class="input-container">
-            <div class="radiobutton-container hide-on-mobile">
-            <input type="radio" class="input-style" name="transaction-claim" id="starbucks"/>
-            <label for="starbucks">
-              <div class="radio-replica">
-              <div class="inside"></div>
-              </div>
-              <div class="txn-name-date">
-                <span class="txn-name">Starbucks</span>
-                <span class="txn-date">06 Jan 2025</span>
-              </div>
-              <span class="txn-rate">
-              ₹900.00
-              </span>
-            </label>
-            </div>
-            <div class="radiobutton-container hide-on-mobile">
-            <input type="radio" class="input-style" name="transaction-claim" id="airport-coffee-shop"/>
-            <label for="airport-coffee-shop">
-              <div class="radio-replica">
-              <div class="inside"></div>
-              </div>
-              <div class="txn-name-date">
-              <span class="txn-name">Starbucks</span>
-              <span class="txn-date">03 Jan 2025</span>
-            </div>
-            <span class="txn-rate">
-              ₹800.00
-            </span>
-            </label>
-            </div>
-            <div class="radiobutton-container hide-on-mobile">
-            <input type="radio" class="input-style" name="transaction-claim" id="airport-shop"/>
-            <label for="airport-shop">
-              <div class="radio-replica">
-              <div class="inside"></div>
-              </div>
-              <div class="txn-name-date">
-              <span class="txn-name">Starbucks</span>
-              <span class="txn-date">02 Jan 2025</span>
-            </div>
-            <span class="txn-rate">
-              ₹800.00
-            </span>
-            </label>
-            </div>
-          </div>
+        <div class="col-12 col-md-6 offset-md-3 off transaction-claim-error">
+          <img class="coffee-beans" src="{{site.img_path}}/coffee_beans.svg" />
         </div>
 			
 
-			<div class="form-submission-block">
-				<span class="optin-message"> Opting for Coffee on the Go will reduce your 1 Airport lounge access for the calendar year </span>
-				<div class="form-element">
-	
-					<div class="checkbox-container">
-					  <div class="checkbox">
-						  <input type="checkbox" id="checkbox-tncs">
-						  <label for="checkbox-tncs">
-							  <img src="{{site.img_path}}/checkbox-tick.svg" alt="">
-						  </label>
-					  </div>
-					  <span>
-						  I Agree to the <a href="javascript:void(0);" id="tnclink-readmore-trigger">Terms and
-							  Conditions</a>
-					  </span>
-					</div>
-				</div>
-				<div class="button-container">
-				  <button 
-          id="coffee-proceed-btn" 
-          class="button-styling" 
-          disabled
-          onclick="window.location.hash = 'generateOtp'"
-
-          >Proceed</button>
-				</div>
-			</div>
+			
       </section>
 
 
@@ -318,7 +241,7 @@ active_card: coffee-on-the-go
             </svg>
           </label>
         </div>
-        <p class="sp-input-help-text sp-input-help-text-error" id="otp-error-message">The OTP you have entered is incorrect</p>
+        <p class="sp-input-help-text sp-input-help-text-error">The OTP you have entered is incorrect</p>
       </div>
       <a class="underlined space-top-40 sp-text-gold sp-hover-no-underline sp-text-14" href="#">Resend Code</a>
       <a href="#" class="underlined sp-text-gold sp-text-14 sp-hover-no-underline space-top-40">Cancel</a>

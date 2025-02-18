@@ -2814,6 +2814,19 @@ h2.section-header-style-inline {
 .transaction-claim-form .checkbox-container{
 	align-items: center;
 }
+.form-table-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font: 600 16px "Open Sans", sans-serif;
+	margin-bottom: 20px;
+	color: #fff;
+
+}
+.transaction-claim-error{
+	text-align: center;
+}
+
 section.membership-cards.airport-experience-cards{
 	height: auto;
 }
