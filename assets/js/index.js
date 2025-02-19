@@ -79,8 +79,14 @@ $(document).ready(function () {
 	// trigger readmore when "terms and conditions" is clicked in the form
 	$("#tnclink-readmore-trigger").on('click', function () {
 		$("section.tncs div.tnc-list div.read-more-overlay span.read-more").trigger('click');
+
+		let headerOffet = document.querySelector('.page-header').offsetHeight;
+		desktopNav = document.querySelector('.desktop-nav').offsetHeight;
+		// mobileNav = document.querySelector('.mobile-nav').offsetHeight;
+		headerOffet+=desktopNav
+		
 		$("html, body").animate({
-			'scrollTop': $("section.tncs").offset().top
+			'scrollTop': $("section.tncs").offset().top - headerOffet
 		}, 200);
 	});
 
